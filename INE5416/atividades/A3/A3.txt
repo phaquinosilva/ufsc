@@ -1,0 +1,21 @@
+Questões sobre cálculo lambda
+==============================
+
+1. O cálculo lambda foi idealizado por Alonzo Church durante os anos 1930.
+2. O cálculo lambda é um modelo universal de computação, que pode, portanto, ser utilizado para simular qualuer máquina de Turing.
+3. É um sistema formal em lógica matemática para expressar computação baseado em abstrações de função e aplicação utilizando variaveis ligadas e substituição.
+O cálculo lambda tem relevância no estudo da computabilidade de funções, assim como no desenvolvimento de linguagens de programação funcionais.
+4. Variáveis livres são aquelas não ligadas por uma abstração lambda. Por exemplo, as variaveis livres de x são somente x; as variaveis livres de λx.t são as variaveis livres de t (removido x).
+Variáveis vinculadas, ou dependentes, são aquelas viculadas por um operador de abstração λ. Por exemplo, em uma expressão λx.t, x está sendo vinculado, ligando λx a t. Na expressão λy.xxy, y é uma variável vinculada, e x é variável livre.
+5. Currying é um metodo que modifica uma função de modo que ela somente aceite uma variável de entrada. Por exemplo, a função (x,y) → x + y pode ser reescrita como x → (y → x + y).
+6. Um combinador, em cálculo lambda é uma expressão fechada, isto é, uma expressão que não possui variáveis livres. Um exemplo é a função identidade λx.x, que é um combinador que retorna a própria variável.
+7. Abstração é uma definição de função, por exemplo, (λx.M), em que M é um termo lambda. A variável x fica vinculada na expressão. A aplicação é, simplesmente, a aplicação de uma função a um argumento. Por exemplo, podemos utilizar a abstração λx.x e aplicá-la a um termo y:
+(λx.x)y que avalia para y.
+8. Duas expressões lambda são α-equivalentes quando duas expressões lambda operam da mesma forma em variaveis vinculadas diferentes. Isto é, em uma abstração lambda, a escolha da variável vinculada não importa.
+Como exemplo, os termos λx.y e λa.y são α-equivalentes, representando a mesma função constante que avalia para y.
+9. A α-conversão é uma operação de redução que renomeia variaveis ligadas, de modo a evitar colisões de nome. Algumas regras existem para evitar alterações de sentido sintático de uma expressão, mas um exemplo é a α-conversão de λx.λx.x, que pode resultar em λy.λx.x. 
+10. A β-Redução é uma operação de redução é a aplicação de uma função. Em essência, é a substituição da variavel vinculada pela expressão argumento no corpo da abstração, ou seja, um passo de computação. Como exemplo:
+Assumindo alguma codificação de 6, 3, e mod, temos (λn.n mod 3) → 6 mod 3.  
+11. Uma expressão lambda em forma normal é uma expressão em que não se pode mais aplicar reduções beta. Ou seja, uma expressão estar em forma normal significa que todos os passos de computação possíveis foram realizados.
+Um exemplo é a expressão x, que está na forma normal pois não podemos realizar mais nenhuma redução beta.
+12. O combinador Y é definido como Y = λf.(λx.f(xx)) (λ x.f(xx)), e a redução beta de uma expressão (Y g) pode gerar repetidamente g(Y g). Assim, este combinador permite realizar computações com recursão.

@@ -1,0 +1,30 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity datapath is
+port	(
+		
+		
+		);
+end entity;
+
+architecture blk of datapath is
+
+	component temp_sel_nivel is
+
+	port	(
+			sel: in std_logic_vector(1 downto 0);
+			fire, init, reset: in std_logic;
+			clk: in std_logic;
+			user: out std_logic; --sel do mux que controla os turnos
+			--retorna os valores dos quatro displays
+			d5, d4, d3, d2, d1, d0: out std_logic_vector(6 downto 0) -- displays HEX 7seg
+			);
+
+	end component;
+
+
+begin
+
+
+end architecture;

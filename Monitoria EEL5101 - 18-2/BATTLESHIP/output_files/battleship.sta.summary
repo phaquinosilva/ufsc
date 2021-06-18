@@ -1,0 +1,165 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'datapath:DP|frequency_converter:CONV|hz1'
+Slack : -2.950
+TNS   : -14.146
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -2.379
+TNS   : -291.155
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : -0.632
+TNS   : -1.226
+
+Type  : Slow 1100mV 85C Model Hold 'datapath:DP|frequency_converter:CONV|hz1'
+Slack : 0.407
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'CLOCK_50'
+Slack : -3.029
+TNS   : -428.216
+
+Type  : Slow 1100mV 85C Model Recovery 'datapath:DP|frequency_converter:CONV|hz1'
+Slack : -2.896
+TNS   : -14.392
+
+Type  : Slow 1100mV 85C Model Removal 'CLOCK_50'
+Slack : -0.451
+TNS   : -4.110
+
+Type  : Slow 1100mV 85C Model Removal 'datapath:DP|frequency_converter:CONV|hz1'
+Slack : 2.450
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -83.646
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'datapath:DP|frequency_converter:CONV|hz1'
+Slack : -0.394
+TNS   : -2.912
+
+Type  : Slow 1100mV 0C Model Setup 'datapath:DP|frequency_converter:CONV|hz1'
+Slack : -3.106
+TNS   : -14.856
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -2.360
+TNS   : -285.953
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -0.874
+TNS   : -1.731
+
+Type  : Slow 1100mV 0C Model Hold 'datapath:DP|frequency_converter:CONV|hz1'
+Slack : 0.382
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'CLOCK_50'
+Slack : -3.050
+TNS   : -429.328
+
+Type  : Slow 1100mV 0C Model Recovery 'datapath:DP|frequency_converter:CONV|hz1'
+Slack : -3.033
+TNS   : -15.095
+
+Type  : Slow 1100mV 0C Model Removal 'CLOCK_50'
+Slack : -0.744
+TNS   : -6.741
+
+Type  : Slow 1100mV 0C Model Removal 'datapath:DP|frequency_converter:CONV|hz1'
+Slack : 2.617
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.394
+TNS   : -90.353
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'datapath:DP|frequency_converter:CONV|hz1'
+Slack : -0.394
+TNS   : -2.998
+
+Type  : Fast 1100mV 85C Model Setup 'datapath:DP|frequency_converter:CONV|hz1'
+Slack : -1.276
+TNS   : -6.006
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -0.996
+TNS   : -99.154
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : -0.459
+TNS   : -0.781
+
+Type  : Fast 1100mV 85C Model Hold 'datapath:DP|frequency_converter:CONV|hz1'
+Slack : 0.167
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'CLOCK_50'
+Slack : -1.253
+TNS   : -174.971
+
+Type  : Fast 1100mV 85C Model Recovery 'datapath:DP|frequency_converter:CONV|hz1'
+Slack : -1.177
+TNS   : -5.853
+
+Type  : Fast 1100mV 85C Model Removal 'CLOCK_50'
+Slack : -0.334
+TNS   : -3.129
+
+Type  : Fast 1100mV 85C Model Removal 'datapath:DP|frequency_converter:CONV|hz1'
+Slack : 1.260
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.086
+TNS   : -13.154
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'datapath:DP|frequency_converter:CONV|hz1'
+Slack : 0.001
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'datapath:DP|frequency_converter:CONV|hz1'
+Slack : -1.255
+TNS   : -5.901
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -0.818
+TNS   : -81.306
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -0.595
+TNS   : -1.085
+
+Type  : Fast 1100mV 0C Model Hold 'datapath:DP|frequency_converter:CONV|hz1'
+Slack : 0.136
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'CLOCK_50'
+Slack : -1.191
+TNS   : -165.085
+
+Type  : Fast 1100mV 0C Model Recovery 'datapath:DP|frequency_converter:CONV|hz1'
+Slack : -1.170
+TNS   : -5.820
+
+Type  : Fast 1100mV 0C Model Removal 'CLOCK_50'
+Slack : -0.493
+TNS   : -4.629
+
+Type  : Fast 1100mV 0C Model Removal 'datapath:DP|frequency_converter:CONV|hz1'
+Slack : 1.277
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.084
+TNS   : -13.016
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'datapath:DP|frequency_converter:CONV|hz1'
+Slack : 0.022
+TNS   : 0.000
+
+------------------------------------------------------------

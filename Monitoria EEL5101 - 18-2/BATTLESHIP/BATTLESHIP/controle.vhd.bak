@@ -1,0 +1,71 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity controle is
+port (
+		clk, rst: in std_logic;
+		enter, fire, change_user, error, end_game, end_time, win1, win2: in std_logic;		
+		r1, r2, r3, r4, e1, e2, e3, e4: out std_logic
+		);
+end entity;
+
+architecture fsm of controle is
+
+	type estado is (S0, S1, S2, S3, S4, S5);
+	signal EA, PE: estado;
+
+begin
+
+	MEM: process (clk, rst) is
+	begin
+		if rst='1' then
+			EA <= S0;
+		elsif clk'event and clk='1' then
+			EA <= PE;
+		end if;
+	end process;
+	
+	NSL: process (EA, enter, fire, change_user, error, end_game, end_time, win1, win2) is
+	begin
+		PE <= EA;
+		case EA is
+			when S0 =>
+				if enter='1' then
+					PE <= S1;
+				end if;
+			when S1 =>
+				if enter='1' then
+					PE <= S2;
+				end if;
+			when S2 =>
+				if fire='1' then
+					PE <= S3;
+				end if;
+			when S3 =>
+				if (error='0' and end_game='0' and end_time='0' and win1='0' and win2='0') then
+					PE <= S4;
+				else
+					PE <= S5;
+				end if;
+			when S4 =>
+				if change_user='1' then
+					PE <= S2;
+				end if;
+			when S5 =>
+				if enter='1' then
+					PE <= S0;
+				end if;
+		end case;
+	end process;
+	
+	--OUTPUT LOGIC
+	r1 <='1' when EA=S0 else '0';
+	r2 <= '1' when EA=S0 else '0';
+	r3 <= '1' when EA=S0 else '0';
+	r4 <= '1' when (EA=S0 or EA=S4) else '0';
+	e1 <= '1' when EA=S2 else '0';
+	e2 <= '1' when EA=S1 else '0';
+	e3 <= '1' when EA=S3 else '0';
+	e4 <= '1' when EA=S2 else '0';
+	
+end architecture;

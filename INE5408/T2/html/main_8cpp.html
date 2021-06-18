@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trabalho de implementação II: Referência do Arquivo main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Trabalho de implementação II
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Componentes</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &quot;<a class="el" href="trie_8h_source.html">trie.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="linked__queue_8h_source.html">linked_queue.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="array__list_8h_source.html">array_list.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Componentes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpalavra__t.html">palavra_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definição do tipo <a class="el" href="structpalavra__t.html" title="Definição do tipo palavra_t usado na análise dos dicionários.">palavra_t</a> usado na análise dos dicionários.  <a href="structpalavra__t.html#details">Mais...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a283cc804b0f07b07fb08624185a3e421"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstructures_1_1LinkedQueue.html">LinkedQueue</a>&lt; <a class="el" href="structpalavra__t.html">palavra_t</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a283cc804b0f07b07fb08624185a3e421">encontrarPalavras</a> (string filename)</td></tr>
+<tr class="memdesc:a283cc804b0f07b07fb08624185a3e421"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função para elaborar fila de palavras a partir da entrada de dicionário.  <a href="#a283cc804b0f07b07fb08624185a3e421">Mais...</a><br /></td></tr>
+<tr class="separator:a283cc804b0f07b07fb08624185a3e421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03a993c090d7d85f6da0939565d9f858"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a03a993c090d7d85f6da0939565d9f858">criarTrie</a> (<a class="el" href="classstructures_1_1Trie.html">Trie</a> *trie_, <a class="el" href="classstructures_1_1LinkedQueue.html">LinkedQueue</a>&lt; <a class="el" href="structpalavra__t.html">palavra_t</a> &gt; *queuePalavras_)</td></tr>
+<tr class="memdesc:a03a993c090d7d85f6da0939565d9f858"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procedimento para criar a árvore a partir da fila lida no dicionario.  <a href="#a03a993c090d7d85f6da0939565d9f858">Mais...</a><br /></td></tr>
+<tr class="separator:a03a993c090d7d85f6da0939565d9f858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1288e17c248de4df266ae8f13803f4e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a1288e17c248de4df266ae8f13803f4e0">printarPalavras</a> (<a class="el" href="classstructures_1_1Trie.html">Trie</a> *trie_, <a class="el" href="classstructures_1_1LinkedQueue.html">LinkedQueue</a>&lt; string &gt; *queueWords_)</td></tr>
+<tr class="memdesc:a1288e17c248de4df266ae8f13803f4e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procedimento para imprimir dados requeridos pelo problema especificado no trabalho.  <a href="#a1288e17c248de4df266ae8f13803f4e0">Mais...</a><br /></td></tr>
+<tr class="separator:a1288e17c248de4df266ae8f13803f4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:adbccb8e2cf601ec3e11d7bf9b8ea6de9"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structpalavra__t.html">palavra_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#adbccb8e2cf601ec3e11d7bf9b8ea6de9">palavra_s</a></td></tr>
+<tr class="separator:adbccb8e2cf601ec3e11d7bf9b8ea6de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd2ffd9d18a2d95003228f11109dcbb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstructures_1_1LinkedQueue.html">LinkedQueue</a>&lt; string &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#acd2ffd9d18a2d95003228f11109dcbb2">queueWords</a></td></tr>
+<tr class="separator:acd2ffd9d18a2d95003228f11109dcbb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab1802bff86e34e7c6cfd73d70cb2347"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classstructures_1_1LinkedQueue.html">LinkedQueue</a>&lt; <a class="el" href="structpalavra__t.html">palavra_t</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aab1802bff86e34e7c6cfd73d70cb2347">queuePalavras</a></td></tr>
+<tr class="separator:aab1802bff86e34e7c6cfd73d70cb2347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Funções</h2>
+<a id="a03a993c090d7d85f6da0939565d9f858"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03a993c090d7d85f6da0939565d9f858">&#9670;&nbsp;</a></span>criarTrie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void criarTrie </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classstructures_1_1Trie.html">Trie</a> *&#160;</td>
+          <td class="paramname"><em>trie_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstructures_1_1LinkedQueue.html">LinkedQueue</a>&lt; <a class="el" href="structpalavra__t.html">palavra_t</a> &gt; *&#160;</td>
+          <td class="paramname"><em>queuePalavras_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Procedimento para criar a árvore a partir da fila lida no dicionario. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">um</td><td>ponteiro para objeto Trie. </td></tr>
+    <tr><td class="paramname">um</td><td>ponteiro para uma fila de palavras. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a283cc804b0f07b07fb08624185a3e421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a283cc804b0f07b07fb08624185a3e421">&#9670;&nbsp;</a></span>encontrarPalavras()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstructures_1_1LinkedQueue.html">LinkedQueue</a>&lt; <a class="el" href="structpalavra__t.html">palavra_t</a> &gt; * encontrarPalavras </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função para elaborar fila de palavras a partir da entrada de dicionário. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uma</td><td>string na forma de arquivo. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>uma fila das palavras contidas no dicionário de entrada. </dd></dl>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1288e17c248de4df266ae8f13803f4e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1288e17c248de4df266ae8f13803f4e0">&#9670;&nbsp;</a></span>printarPalavras()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void printarPalavras </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classstructures_1_1Trie.html">Trie</a> *&#160;</td>
+          <td class="paramname"><em>trie_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classstructures_1_1LinkedQueue.html">LinkedQueue</a>&lt; string &gt; *&#160;</td>
+          <td class="paramname"><em>queueWords_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Procedimento para imprimir dados requeridos pelo problema especificado no trabalho. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ponteiro</td><td>para Trie analisada. </td></tr>
+    <tr><td class="paramname">ponteiro</td><td>para fila de palavras. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="main_8cpp.html#a03a993c090d7d85f6da0939565d9f858" title="Procedimento para criar a árvore a partir da fila lida no dicionario.">criarTrie(Trie* trie_, LinkedQueue&lt;palavra_t&gt; *queuePalavras_)</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variáveis</h2>
+<a id="adbccb8e2cf601ec3e11d7bf9b8ea6de9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbccb8e2cf601ec3e11d7bf9b8ea6de9">&#9670;&nbsp;</a></span>palavra_s</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structpalavra__t.html">palavra_t</a>  palavra_s</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab1802bff86e34e7c6cfd73d70cb2347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab1802bff86e34e7c6cfd73d70cb2347">&#9670;&nbsp;</a></span>queuePalavras</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstructures_1_1LinkedQueue.html">LinkedQueue</a>&lt;<a class="el" href="structpalavra__t.html">palavra_t</a>&gt;* queuePalavras</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd2ffd9d18a2d95003228f11109dcbb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd2ffd9d18a2d95003228f11109dcbb2">&#9670;&nbsp;</a></span>queueWords</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classstructures_1_1LinkedQueue.html">LinkedQueue</a>&lt;string&gt;* queueWords</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

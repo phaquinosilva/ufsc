@@ -1,0 +1,141 @@
+\hypertarget{classstructures_1_1Trie}{}\section{Referência da Classe structures\+::Trie}
+\label{classstructures_1_1Trie}\index{structures::Trie@{structures::Trie}}
+
+
+\mbox{\hyperlink{classstructures_1_1Trie}{Trie}}.  
+
+
+
+
+{\ttfamily \#include $<$trie.\+h$>$}
+
+\subsection*{Componentes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structstructures_1_1Trie_1_1Node}{Node}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structstructures_1_1Trie_1_1Node}{Node}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstructures_1_1Trie_af6cf71564b040dfc62bbdedbbab8271a}{Trie}} ()
+\begin{DoxyCompactList}\small\item\em construtor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstructures_1_1Trie_afc4b294e25004ee33d37a044cad6d342}{$\sim$\+Trie}} ()
+\begin{DoxyCompactList}\small\item\em destrutor \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstructures_1_1Trie_a9a580a15a1582b408aa776d7539ea452}{insert}} (const string \&data, const unsigned long posicao, const unsigned long comprimento)
+\begin{DoxyCompactList}\small\item\em inserir com tamanho e comprimento \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstructures_1_1Trie_af6f528e22594b9b83bc78b81fdc88fd0}{remove}} (const string \&data)
+\begin{DoxyCompactList}\small\item\em remover \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classstructures_1_1Trie_a0b51abf86fd8e2302cf4b65f58982fb1}{contains}} (const string \&data) const
+\begin{DoxyCompactList}\small\item\em contem \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classstructures_1_1Trie_a1a7dcbc0533cc7b1e5ab8ce517b75b6b}{is\+\_\+prefix}} (const string \&data) const
+\begin{DoxyCompactList}\small\item\em is prefix \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classstructures_1_1Trie_a24bb9680f58b9c6879433adf8712c1ad}{empty}} () const
+\begin{DoxyCompactList}\small\item\em vazia \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classstructures_1_1Trie_a4a4081191fa839c7d41e85577a46d7c7}{size}} () const
+\begin{DoxyCompactList}\small\item\em tamanho \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstructures_1_1ArrayList}{Array\+List}}$<$ unsigned long $>$ \& \mbox{\hyperlink{classstructures_1_1Trie_a93269c724024a2c2651203b2b034fbb5}{get\+Pos\+Comp}} (const string \&data)
+\begin{DoxyCompactList}\small\item\em posicao e comprimento \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+\mbox{\hyperlink{classstructures_1_1Trie}{Trie}}. 
+
+\subsection{Construtores e Destrutores}
+\mbox{\Hypertarget{classstructures_1_1Trie_af6cf71564b040dfc62bbdedbbab8271a}\label{classstructures_1_1Trie_af6cf71564b040dfc62bbdedbbab8271a}} 
+\index{structures::Trie@{structures::Trie}!Trie@{Trie}}
+\index{Trie@{Trie}!structures::Trie@{structures::Trie}}
+\subsubsection{\texorpdfstring{Trie()}{Trie()}}
+{\footnotesize\ttfamily structures\+::\+Trie\+::\+Trie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+construtor 
+
+\mbox{\Hypertarget{classstructures_1_1Trie_afc4b294e25004ee33d37a044cad6d342}\label{classstructures_1_1Trie_afc4b294e25004ee33d37a044cad6d342}} 
+\index{structures::Trie@{structures::Trie}!````~Trie@{$\sim$Trie}}
+\index{````~Trie@{$\sim$Trie}!structures::Trie@{structures::Trie}}
+\subsubsection{\texorpdfstring{$\sim$Trie()}{~Trie()}}
+{\footnotesize\ttfamily structures\+::\+Trie\+::$\sim$\+Trie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destrutor 
+
+
+
+\subsection{Funções membros}
+\mbox{\Hypertarget{classstructures_1_1Trie_a0b51abf86fd8e2302cf4b65f58982fb1}\label{classstructures_1_1Trie_a0b51abf86fd8e2302cf4b65f58982fb1}} 
+\index{structures::Trie@{structures::Trie}!contains@{contains}}
+\index{contains@{contains}!structures::Trie@{structures::Trie}}
+\subsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily bool structures\+::\+Trie\+::contains (\begin{DoxyParamCaption}\item[{const string \&}]{data }\end{DoxyParamCaption}) const}
+
+
+
+contem 
+
+\mbox{\Hypertarget{classstructures_1_1Trie_a24bb9680f58b9c6879433adf8712c1ad}\label{classstructures_1_1Trie_a24bb9680f58b9c6879433adf8712c1ad}} 
+\index{structures::Trie@{structures::Trie}!empty@{empty}}
+\index{empty@{empty}!structures::Trie@{structures::Trie}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily bool structures\+::\+Trie\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+vazia 
+
+\mbox{\Hypertarget{classstructures_1_1Trie_a93269c724024a2c2651203b2b034fbb5}\label{classstructures_1_1Trie_a93269c724024a2c2651203b2b034fbb5}} 
+\index{structures::Trie@{structures::Trie}!getPosComp@{getPosComp}}
+\index{getPosComp@{getPosComp}!structures::Trie@{structures::Trie}}
+\subsubsection{\texorpdfstring{getPosComp()}{getPosComp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ unsigned long $>$ \& structures\+::\+Trie\+::get\+Pos\+Comp (\begin{DoxyParamCaption}\item[{const string \&}]{data }\end{DoxyParamCaption})}
+
+
+
+posicao e comprimento 
+
+\mbox{\Hypertarget{classstructures_1_1Trie_a9a580a15a1582b408aa776d7539ea452}\label{classstructures_1_1Trie_a9a580a15a1582b408aa776d7539ea452}} 
+\index{structures::Trie@{structures::Trie}!insert@{insert}}
+\index{insert@{insert}!structures::Trie@{structures::Trie}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily void structures\+::\+Trie\+::insert (\begin{DoxyParamCaption}\item[{const string \&}]{data,  }\item[{const unsigned long}]{posicao,  }\item[{const unsigned long}]{comprimento }\end{DoxyParamCaption})}
+
+
+
+inserir com tamanho e comprimento 
+
+\mbox{\Hypertarget{classstructures_1_1Trie_a1a7dcbc0533cc7b1e5ab8ce517b75b6b}\label{classstructures_1_1Trie_a1a7dcbc0533cc7b1e5ab8ce517b75b6b}} 
+\index{structures::Trie@{structures::Trie}!is\_prefix@{is\_prefix}}
+\index{is\_prefix@{is\_prefix}!structures::Trie@{structures::Trie}}
+\subsubsection{\texorpdfstring{is\_prefix()}{is\_prefix()}}
+{\footnotesize\ttfamily bool structures\+::\+Trie\+::is\+\_\+prefix (\begin{DoxyParamCaption}\item[{const string \&}]{data }\end{DoxyParamCaption}) const}
+
+
+
+is prefix 
+
+\mbox{\Hypertarget{classstructures_1_1Trie_af6f528e22594b9b83bc78b81fdc88fd0}\label{classstructures_1_1Trie_af6f528e22594b9b83bc78b81fdc88fd0}} 
+\index{structures::Trie@{structures::Trie}!remove@{remove}}
+\index{remove@{remove}!structures::Trie@{structures::Trie}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void structures\+::\+Trie\+::remove (\begin{DoxyParamCaption}\item[{const string \&}]{data }\end{DoxyParamCaption})}
+
+
+
+remover 
+
+\mbox{\Hypertarget{classstructures_1_1Trie_a4a4081191fa839c7d41e85577a46d7c7}\label{classstructures_1_1Trie_a4a4081191fa839c7d41e85577a46d7c7}} 
+\index{structures::Trie@{structures::Trie}!size@{size}}
+\index{size@{size}!structures::Trie@{structures::Trie}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily std\+::size\+\_\+t structures\+::\+Trie\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+tamanho 
+
+
+
+A documentação para essa classe foi gerada a partir do seguinte arquivo\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{trie_8h}{trie.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,25 @@
+|finite_state_machine
+clk => currentState~1.DATAIN
+rst => currentState~3.DATAIN
+SA => nextState.OUTPUTSELECT
+SA => nextState.OUTPUTSELECT
+SA => nextState.OUTPUTSELECT
+SA => nextState.OUTPUTSELECT
+SF => nextState.OUTPUTSELECT
+SF => nextState.OUTPUTSELECT
+SF => nextState.OUTPUTSELECT
+SF => nextState.OUTPUTSELECT
+CR => nextState.OUTPUTSELECT
+CR => nextState.OUTPUTSELECT
+CR => nextState.OUTPUTSELECT
+CR => nextState.OUTPUTSELECT
+CR => nextState.OUTPUTSELECT
+CR => nextState.OUTPUTSELECT
+OB => nextState.OUTPUTSELECT
+OB => nextState.OUTPUTSELECT
+OB => nextState.OUTPUTSELECT
+OB => nextState.OUTPUTSELECT
+MT[0] <= MT[0].DB_MAX_OUTPUT_PORT_TYPE
+MT[1] <= MT.DB_MAX_OUTPUT_PORT_TYPE
+
+

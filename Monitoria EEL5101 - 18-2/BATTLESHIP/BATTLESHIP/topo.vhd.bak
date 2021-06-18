@@ -1,0 +1,63 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity topo is 
+port (
+		CLOCK_50: in std_logic;
+		SW: in std_logic_vector(9 downto 0);
+		KEY: in std_logic_vector(3 downto 0);
+		HEX0, HEX1, HEX2, HEX3, HEX4, HEX5: out std_logic_vector(6 downto 0);
+		LEDR: out std_logic_vector(9 downto 0)
+		);
+end entity;
+
+architecture toplevel of topo is
+
+	component button_sync is
+		port
+		(
+			KEY0, KEY1, KEY2, KEY3, CLK: in std_logic;
+			BTN0, BTN1, BTN2, BTN3: out std_logic
+		);
+	end component;
+	
+	component datapath is
+		port (
+				clk, rst, fire: in std_logic; --top level control inputs
+				r1, r2, r3, r4, e1, e2, e3, e4: in std_logic; --control inputs
+				switch: in std_logic_vector(9 downto 0); --top level data inputs
+				change_user, error_out, end_game_out, end_time_out, win1, win2: out std_logic; --control outputs
+				d0, d1, d2, d3, d4, d5: out std_logic_vector (6 downto 0); --data_outputs
+				score1, score2: out std_logic_vector(3 downto 0) --data outputs
+				);
+	end component;
+	
+	component controle is
+		port (
+				clk, rst: in std_logic;
+				enter, fire, change_user, error, end_game, end_time, win1, win2: in std_logic;		
+				r1, r2, r3, r4, e1, e2, e3, e4: out std_logic
+				);
+	end component;
+	
+	signal 	btn0, btn1, btn2, btn3,
+				r1,r2,r3,r4,e1,e2,e3,e4,
+				change_user, error,end_game,end_time,win1,win2: std_logic;
+
+begin
+	
+	BS: button_sync port map (KEY(0), KEY(1), KEY(2), KEY(3), btn0, btn1, btn2, btn3);
+	
+	DP: datapath port map 	(CLOCK_50, btn0, btn2, 
+									r1, r2, r3, r4, e1, e2, e3, e4,
+									SW, change_user, error, end_game, end_time, win1, win2,
+									HEX0, HEX1, HEX2, HEX3, HEX4, HEX5,
+									LEDR(3 downto 0), LEDR(8 downto 5));
+	LEDR(4) <= win1;
+	LEDR(9) <= win2;
+	
+	CTRL: controle port map (CLOCK_50, btn0, btn1, btn2,
+									change_user, error, end_game, end_time, win1, win2,
+									r1, r2, r3, r4, e1, e2, e3, e4);
+									
+end architecture;

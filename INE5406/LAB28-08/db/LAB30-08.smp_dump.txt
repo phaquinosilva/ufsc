@@ -1,0 +1,7 @@
+
+State Machine - |finite_state_machine|currentState
+Name currentState.ABERTO currentState.ABRINDO currentState.FECHADO currentState.FECHANDO 
+currentState.FECHANDO 0 0 0 0 
+currentState.FECHADO 0 0 1 1 
+currentState.ABRINDO 0 1 0 1 
+currentState.ABERTO 1 0 0 1 

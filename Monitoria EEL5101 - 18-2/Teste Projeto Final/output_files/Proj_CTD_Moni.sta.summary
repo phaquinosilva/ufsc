@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -8.496
+TNS   : -235.867
+
+Type  : Slow 1100mV 85C Model Setup 'down_counter:timer|second_counter:conta_seg|cnt[0]'
+Slack : -3.405
+TNS   : -11.749
+
+Type  : Slow 1100mV 85C Model Setup 'down_counter:timer|digit_counter:down_un|cnt[0]'
+Slack : -1.996
+TNS   : -7.094
+
+Type  : Slow 1100mV 85C Model Hold 'down_counter:timer|second_counter:conta_seg|cnt[0]'
+Slack : 0.478
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.489
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'down_counter:timer|digit_counter:down_un|cnt[0]'
+Slack : 0.856
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.724
+TNS   : -31.207
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'down_counter:timer|second_counter:conta_seg|cnt[0]'
+Slack : -0.724
+TNS   : -4.480
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'down_counter:timer|digit_counter:down_un|cnt[0]'
+Slack : -0.724
+TNS   : -4.442
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -8.339
+TNS   : -231.874
+
+Type  : Slow 1100mV 0C Model Setup 'down_counter:timer|second_counter:conta_seg|cnt[0]'
+Slack : -3.408
+TNS   : -11.739
+
+Type  : Slow 1100mV 0C Model Setup 'down_counter:timer|digit_counter:down_un|cnt[0]'
+Slack : -2.066
+TNS   : -7.199
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : 0.277
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'down_counter:timer|second_counter:conta_seg|cnt[0]'
+Slack : 0.474
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'down_counter:timer|digit_counter:down_un|cnt[0]'
+Slack : 0.807
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.724
+TNS   : -31.271
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'down_counter:timer|second_counter:conta_seg|cnt[0]'
+Slack : -0.724
+TNS   : -4.513
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'down_counter:timer|digit_counter:down_un|cnt[0]'
+Slack : -0.724
+TNS   : -4.462
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -3.658
+TNS   : -101.500
+
+Type  : Fast 1100mV 85C Model Setup 'down_counter:timer|second_counter:conta_seg|cnt[0]'
+Slack : -1.419
+TNS   : -4.928
+
+Type  : Fast 1100mV 85C Model Setup 'down_counter:timer|digit_counter:down_un|cnt[0]'
+Slack : -0.526
+TNS   : -1.765
+
+Type  : Fast 1100mV 85C Model Hold 'down_counter:timer|second_counter:conta_seg|cnt[0]'
+Slack : 0.192
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.196
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'down_counter:timer|digit_counter:down_un|cnt[0]'
+Slack : 0.294
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.088
+TNS   : -2.374
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'down_counter:timer|digit_counter:down_un|cnt[0]'
+Slack : 0.094
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'down_counter:timer|second_counter:conta_seg|cnt[0]'
+Slack : 0.126
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -3.099
+TNS   : -86.016
+
+Type  : Fast 1100mV 0C Model Setup 'down_counter:timer|second_counter:conta_seg|cnt[0]'
+Slack : -1.267
+TNS   : -4.395
+
+Type  : Fast 1100mV 0C Model Setup 'down_counter:timer|digit_counter:down_un|cnt[0]'
+Slack : -0.447
+TNS   : -1.452
+
+Type  : Fast 1100mV 0C Model Hold 'down_counter:timer|second_counter:conta_seg|cnt[0]'
+Slack : 0.111
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : 0.184
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'down_counter:timer|digit_counter:down_un|cnt[0]'
+Slack : 0.255
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.088
+TNS   : -2.361
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'down_counter:timer|digit_counter:down_un|cnt[0]'
+Slack : 0.096
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'down_counter:timer|second_counter:conta_seg|cnt[0]'
+Slack : 0.130
+TNS   : 0.000
+
+------------------------------------------------------------

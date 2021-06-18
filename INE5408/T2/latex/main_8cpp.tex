@@ -1,0 +1,119 @@
+\hypertarget{main_8cpp}{}\section{Referência do Arquivo main.\+cpp}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include \char`\"{}trie.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}linked\+\_\+queue.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}array\+\_\+list.\+h\char`\"{}}\newline
+\subsection*{Componentes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structpalavra__t}{palavra\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Definição do tipo \mbox{\hyperlink{structpalavra__t}{palavra\+\_\+t}} usado na análise dos dicionários. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstructures_1_1LinkedQueue}{Linked\+Queue}}$<$ \mbox{\hyperlink{structpalavra__t}{palavra\+\_\+t}} $>$ $\ast$ \mbox{\hyperlink{main_8cpp_a283cc804b0f07b07fb08624185a3e421}{encontrar\+Palavras}} (string filename)
+\begin{DoxyCompactList}\small\item\em Função para elaborar fila de palavras a partir da entrada de dicionário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a03a993c090d7d85f6da0939565d9f858}{criar\+Trie}} (\mbox{\hyperlink{classstructures_1_1Trie}{Trie}} $\ast$trie\+\_\+, \mbox{\hyperlink{classstructures_1_1LinkedQueue}{Linked\+Queue}}$<$ \mbox{\hyperlink{structpalavra__t}{palavra\+\_\+t}} $>$ $\ast$queue\+Palavras\+\_\+)
+\begin{DoxyCompactList}\small\item\em Procedimento para criar a árvore a partir da fila lida no dicionario. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a1288e17c248de4df266ae8f13803f4e0}{printar\+Palavras}} (\mbox{\hyperlink{classstructures_1_1Trie}{Trie}} $\ast$trie\+\_\+, \mbox{\hyperlink{classstructures_1_1LinkedQueue}{Linked\+Queue}}$<$ string $>$ $\ast$queue\+Words\+\_\+)
+\begin{DoxyCompactList}\small\item\em Procedimento para imprimir dados requeridos pelo problema especificado no trabalho. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+\subsection*{Variáveis}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structpalavra__t}{palavra\+\_\+t}} \mbox{\hyperlink{main_8cpp_adbccb8e2cf601ec3e11d7bf9b8ea6de9}{palavra\+\_\+s}}
+\item 
+\mbox{\hyperlink{classstructures_1_1LinkedQueue}{Linked\+Queue}}$<$ string $>$ $\ast$ \mbox{\hyperlink{main_8cpp_acd2ffd9d18a2d95003228f11109dcbb2}{queue\+Words}}
+\item 
+\mbox{\hyperlink{classstructures_1_1LinkedQueue}{Linked\+Queue}}$<$ \mbox{\hyperlink{structpalavra__t}{palavra\+\_\+t}} $>$ $\ast$ \mbox{\hyperlink{main_8cpp_aab1802bff86e34e7c6cfd73d70cb2347}{queue\+Palavras}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Funções}
+\mbox{\Hypertarget{main_8cpp_a03a993c090d7d85f6da0939565d9f858}\label{main_8cpp_a03a993c090d7d85f6da0939565d9f858}} 
+\index{main.cpp@{main.cpp}!criarTrie@{criarTrie}}
+\index{criarTrie@{criarTrie}!main.cpp@{main.cpp}}
+\subsubsection{\texorpdfstring{criarTrie()}{criarTrie()}}
+{\footnotesize\ttfamily void criar\+Trie (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstructures_1_1Trie}{Trie}} $\ast$}]{trie\+\_\+,  }\item[{\mbox{\hyperlink{classstructures_1_1LinkedQueue}{Linked\+Queue}}$<$ \mbox{\hyperlink{structpalavra__t}{palavra\+\_\+t}} $>$ $\ast$}]{queue\+Palavras\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Procedimento para criar a árvore a partir da fila lida no dicionario. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em um} & ponteiro para objeto Trie. \\
+\hline
+{\em um} & ponteiro para uma fila de palavras. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_a283cc804b0f07b07fb08624185a3e421}\label{main_8cpp_a283cc804b0f07b07fb08624185a3e421}} 
+\index{main.cpp@{main.cpp}!encontrarPalavras@{encontrarPalavras}}
+\index{encontrarPalavras@{encontrarPalavras}!main.cpp@{main.cpp}}
+\subsubsection{\texorpdfstring{encontrarPalavras()}{encontrarPalavras()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classstructures_1_1LinkedQueue}{Linked\+Queue}}$<$ \mbox{\hyperlink{structpalavra__t}{palavra\+\_\+t}} $>$ $\ast$ encontrar\+Palavras (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Função para elaborar fila de palavras a partir da entrada de dicionário. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em uma} & string na forma de arquivo. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+uma fila das palavras contidas no dicionário de entrada. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a1288e17c248de4df266ae8f13803f4e0}\label{main_8cpp_a1288e17c248de4df266ae8f13803f4e0}} 
+\index{main.cpp@{main.cpp}!printarPalavras@{printarPalavras}}
+\index{printarPalavras@{printarPalavras}!main.cpp@{main.cpp}}
+\subsubsection{\texorpdfstring{printarPalavras()}{printarPalavras()}}
+{\footnotesize\ttfamily void printar\+Palavras (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstructures_1_1Trie}{Trie}} $\ast$}]{trie\+\_\+,  }\item[{\mbox{\hyperlink{classstructures_1_1LinkedQueue}{Linked\+Queue}}$<$ string $>$ $\ast$}]{queue\+Words\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+Procedimento para imprimir dados requeridos pelo problema especificado no trabalho. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em ponteiro} & para Trie analisada. \\
+\hline
+{\em ponteiro} & para fila de palavras. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{Veja também}
+\mbox{\hyperlink{main_8cpp_a03a993c090d7d85f6da0939565d9f858}{criar\+Trie(\+Trie$\ast$ trie\+\_\+, Linked\+Queue$<$palavra\+\_\+t$>$ $\ast$queue\+Palavras\+\_\+)}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Variáveis}
+\mbox{\Hypertarget{main_8cpp_adbccb8e2cf601ec3e11d7bf9b8ea6de9}\label{main_8cpp_adbccb8e2cf601ec3e11d7bf9b8ea6de9}} 
+\index{main.cpp@{main.cpp}!palavra\_s@{palavra\_s}}
+\index{palavra\_s@{palavra\_s}!main.cpp@{main.cpp}}
+\subsubsection{\texorpdfstring{palavra\_s}{palavra\_s}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{structpalavra__t}{palavra\+\_\+t}}  palavra\+\_\+s}
+
+\mbox{\Hypertarget{main_8cpp_aab1802bff86e34e7c6cfd73d70cb2347}\label{main_8cpp_aab1802bff86e34e7c6cfd73d70cb2347}} 
+\index{main.cpp@{main.cpp}!queuePalavras@{queuePalavras}}
+\index{queuePalavras@{queuePalavras}!main.cpp@{main.cpp}}
+\subsubsection{\texorpdfstring{queuePalavras}{queuePalavras}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classstructures_1_1LinkedQueue}{Linked\+Queue}}$<$\mbox{\hyperlink{structpalavra__t}{palavra\+\_\+t}}$>$$\ast$ queue\+Palavras}
+
+\mbox{\Hypertarget{main_8cpp_acd2ffd9d18a2d95003228f11109dcbb2}\label{main_8cpp_acd2ffd9d18a2d95003228f11109dcbb2}} 
+\index{main.cpp@{main.cpp}!queueWords@{queueWords}}
+\index{queueWords@{queueWords}!main.cpp@{main.cpp}}
+\subsubsection{\texorpdfstring{queueWords}{queueWords}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classstructures_1_1LinkedQueue}{Linked\+Queue}}$<$string$>$$\ast$ queue\+Words}
+

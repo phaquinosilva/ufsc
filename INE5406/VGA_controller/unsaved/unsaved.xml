@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2018.08.30.15:25:15"
+ outputDirectory="C:/Users/phaqu/Documents/18-2/SD/VGA_controller/unsaved/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="5CSEMA5F31C6"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="6"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLOCK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="50000000" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="clock" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clock_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="reset_reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="rest" kind="reset" start="0">
+   <property name="associatedClock" value="clock" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="rest_reset" direction="input" role="reset" width="1" />
+  </interface>
+  <interface name="vga_stream_sync" kind="avalon_streaming" start="0">
+   <property name="associatedClock" value="clock" />
+   <property name="associatedReset" value="rest" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="10" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="3" />
+   <port name="vga_stream_sync_data" direction="input" role="data" width="30" />
+   <port
+       name="vga_stream_sync_startofpacket"
+       direction="input"
+       role="startofpacket"
+       width="1" />
+   <port
+       name="vga_stream_sync_endofpacket"
+       direction="input"
+       role="endofpacket"
+       width="1" />
+   <port name="vga_stream_sync_valid" direction="input" role="valid" width="1" />
+   <port
+       name="vga_stream_sync_ready"
+       direction="output"
+       role="ready"
+       width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="unsaved:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_CLOCK_CLOCK_DOMAIN=-1,AUTO_CLOCK_CLOCK_RATE=-1,AUTO_CLOCK_RESET_DOMAIN=-1,AUTO_DEVICE=5CSEMA5F31C6,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=6,AUTO_GENERATION_ID=1535653514,AUTO_UNIQUE_ID=(clock_source:18.0:clockFrequency=50000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(altera_up_avalon_video_vga_controller:18.0:AUTO_CLK_CLOCK_RATE=0,AUTO_DEVICE_FAMILY=Cyclone V,board=DE1-SoC,device=VGA Connector,resolution=SVGA 800x600,underflow_flag=false)"
+   instancePathKey="unsaved"
+   kind="unsaved"
+   version="1.0"
+   name="unsaved">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_CLOCK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLOCK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1535653514" />
+  <parameter name="AUTO_DEVICE" value="5CSEMA5F31C6" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="6" />
+  <generatedFiles>
+   <file
+       path="C:/Users/phaqu/Documents/18-2/SD/VGA_controller/unsaved/synthesis/unsaved.vhd"
+       type="VHDL" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:/Users/phaqu/Documents/18-2/SD/VGA_controller/unsaved/synthesis/submodules/altera_up_avalon_video_vga_timing.v"
+       type="VERILOG" />
+   <file
+       path="C:/Users/phaqu/Documents/18-2/SD/VGA_controller/unsaved/synthesis/submodules/unsaved_video_vga_controller_0.v"
+       type="VERILOG" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file path="C:/Users/phaqu/Documents/18-2/SD/VGA_controller/unsaved.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/intelfpga_lite/18.0/ip/altera/university_program/audio_video/video/altera_up_avalon_video_vga_controller/altera_up_avalon_video_vga_controller_hw.tcl" />
+   <file
+       path="C:/intelfpga_lite/18.0/ip/altera/university_program/audio_video/video/altera_up_avalon_video_vga_controller/hdl/altera_up_avalon_video_vga_timing.v" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="unsaved">queue size: 0 starting:unsaved "unsaved"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>2</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="unsaved"><![CDATA["<b>unsaved</b>" reuses <b>altera_up_avalon_video_vga_controller</b> "<b>submodules/unsaved_video_vga_controller_0</b>"]]></message>
+   <message level="Debug" culprit="unsaved">queue size: 0 starting:altera_up_avalon_video_vga_controller "submodules/unsaved_video_vga_controller_0"</message>
+   <message level="Info" culprit="video_vga_controller_0">Starting Generation of VGA Controller</message>
+   <message level="Info" culprit="video_vga_controller_0"><![CDATA["<b>unsaved</b>" instantiated <b>altera_up_avalon_video_vga_controller</b> "<b>video_vga_controller_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_up_avalon_video_vga_controller:18.0:AUTO_CLK_CLOCK_RATE=0,AUTO_DEVICE_FAMILY=Cyclone V,board=DE1-SoC,device=VGA Connector,resolution=SVGA 800x600,underflow_flag=false"
+   instancePathKey="unsaved:.:video_vga_controller_0"
+   kind="altera_up_avalon_video_vga_controller"
+   version="18.0"
+   name="unsaved_video_vga_controller_0">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
+  <parameter name="underflow_flag" value="false" />
+  <parameter name="device" value="VGA Connector" />
+  <parameter name="resolution" value="SVGA 800x600" />
+  <parameter name="board" value="DE1-SoC" />
+  <generatedFiles>
+   <file
+       path="C:/Users/phaqu/Documents/18-2/SD/VGA_controller/unsaved/synthesis/submodules/altera_up_avalon_video_vga_timing.v"
+       type="VERILOG" />
+   <file
+       path="C:/Users/phaqu/Documents/18-2/SD/VGA_controller/unsaved/synthesis/submodules/unsaved_video_vga_controller_0.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga_lite/18.0/ip/altera/university_program/audio_video/video/altera_up_avalon_video_vga_controller/altera_up_avalon_video_vga_controller_hw.tcl" />
+   <file
+       path="C:/intelfpga_lite/18.0/ip/altera/university_program/audio_video/video/altera_up_avalon_video_vga_controller/hdl/altera_up_avalon_video_vga_timing.v" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="unsaved" as="video_vga_controller_0" />
+  <messages>
+   <message level="Debug" culprit="unsaved">queue size: 0 starting:altera_up_avalon_video_vga_controller "submodules/unsaved_video_vga_controller_0"</message>
+   <message level="Info" culprit="video_vga_controller_0">Starting Generation of VGA Controller</message>
+   <message level="Info" culprit="video_vga_controller_0"><![CDATA["<b>unsaved</b>" instantiated <b>altera_up_avalon_video_vga_controller</b> "<b>video_vga_controller_0</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>

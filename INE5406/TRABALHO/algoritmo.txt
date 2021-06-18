@@ -1,0 +1,43 @@
+Projeto sistemas digitais
+--------------------------------
+
+--Variáveis
+ball_speedX = 2;
+ball_speedY = 2;
+pLeft_speedY = 2;
+pRigth_speedY = 2;
+pLeft_Y = 300 - pLeft_height;
+pRight_Y = 300 - pRight_height;
+
+
+--Constantes
+
+
+----Unidade move paddle
+
+--move paddle esquerda
+if (upL) {
+	while (yL >= 0) {
+		yL = yL - speed;
+	}
+} else if (downL) {
+	while (yL <= 600 - pad_size) {
+		yL = yL + speed;
+	}
+}
+--move paddle direita
+if (upR) {
+	while (yR >= 0) {
+		yR = yR - speed;
+	}
+} else if (downR) {
+	while (yR <= 600 - pad_size) {
+		yR = yR + speed;
+	}
+}
+
+----Unidade move bola
+if(bY == (600 - ball_height) || bY == (0 + ball+height)){
+	;
+}
+

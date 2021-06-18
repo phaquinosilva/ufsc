@@ -1,0 +1,203 @@
+-------------------------------------------
+TESTE COMPLETO DO RELOGIO
+-------------------------------------------
+#Força clk, switches e keys quando ligamos
+force -freeze sim:/relogio/CLOCK_50 1 0, 0 {50 ps} -r 100
+force -freeze sim:/relogio/SW 0000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+
+#liga enable pro relogio e aperta o clear
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1110 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+
+#set hora --> 13:26:30
+#REL -> A1 // aciona setter
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1101 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+#A1 -> A2 //set hora
+force -freeze sim:/relogio/SW 1000010011 0
+force -freeze sim:/relogio/KEY 1101 0
+run
+force -freeze sim:/relogio/SW 1000010011 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+#A2 -> A3 // set minuto
+force -freeze sim:/relogio/SW 1000100110 0
+force -freeze sim:/relogio/KEY 1101 0
+run
+force -freeze sim:/relogio/SW 1000100110 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+#A3 -> REL // set seg
+force -freeze sim:/relogio/SW 1000110000 0
+force -freeze sim:/relogio/KEY 1101 0
+run
+force -freeze sim:/relogio/SW 1000110000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+
+#cronometro
+#REL -> CR // supostamente é pra contar 5s
+force -freeze sim:/relogio/SW 1100000000 0
+force -freeze sim:/relogio/KEY 1011 0
+run
+force -freeze sim:/relogio/SW 1100000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1100000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1100000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1100000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1100000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1100000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1100000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1100000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1100000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+#CR -> REL
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1011 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+
+#ajuste alarme --> 13:26:45
+#REL -> AL1
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 0111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+#AL1 -> AL2
+force -freeze sim:/relogio/SW 1000010011 0
+force -freeze sim:/relogio/KEY 0111 0
+run
+force -freeze sim:/relogio/SW 1000010011 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+#AL2 -> AL3
+force -freeze sim:/relogio/SW 1000100110 0
+force -freeze sim:/relogio/KEY 0111 0
+run
+force -freeze sim:/relogio/SW 1000100110 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+#AL3 -> REL
+force -freeze sim:/relogio/SW 1001000101 0
+force -freeze sim:/relogio/KEY 0111 0
+run
+force -freeze sim:/relogio/SW 1001000101 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+
+#espera dar o alarme // é pra ter ido 23 ciclos de clock, e precisamos de 30 pra chegar em 45s
+
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run
+
+
+#apertamos o desligaAlarme --> BTN1 and BTN2 and BTN3 // NAO FUNCIONA
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1001 0
+run
+force -freeze sim:/relogio/SW 1000000000 0
+force -freeze sim:/relogio/KEY 1111 0
+run

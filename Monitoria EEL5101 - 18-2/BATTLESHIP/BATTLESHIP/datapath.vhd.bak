@@ -1,0 +1,163 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity datapath is
+port (
+		clk, rst, fire: in std_logic; --top level control inputs
+		r1, r2, r3, r4, e1, e2, e3, e4: in std_logic; --control inputs
+		switch: in std_logic_vector(9 downto 0); --top level data inputs
+		change_user, error_out, end_game_out, end_time_out, win1, win2: out std_logic; --control outputs
+		d0, d1, d2, d3, d4, d5: out std_logic_vector (6 downto 0); --data_outputs
+		score1, score2: out std_logic_vector(3 downto 0) --data outputs
+		);
+end entity;
+
+architecture rtl of datapath is
+
+	component mux4x1 is
+		port (
+				in0, in1, in2, in3: in std_logic;
+				sel: in std_logic_vector(1 downto 0);
+				output: out std_logic
+				);
+	end component;
+	
+	component mux2x1 is 
+		port (
+				in0, in1: in std_logic_vector(6 downto 0);
+				sel: in std_logic;
+				output: out std_logic_vector(6 downto 0)
+				);
+	end component;
+	
+	component ffd_10b is
+		port (
+				en, rst, clk: in std_logic;
+				data_in: in std_logic_vector(9 downto 0);
+				data_out: out std_logic_vector(9 downto 0)
+				);
+	end component;
+	
+	component ffd_2b is
+		port (
+				en, rst, clk: in std_logic;
+				data_in: in std_logic_vector(1 downto 0);
+				data_out: out std_logic_vector(1 downto 0)
+				);
+	end component;
+	
+	component frequency_converter is 
+		port	(
+				clk, enable, clear: in std_logic;
+				hz1, hz2, hz3, hz4: out std_logic
+				);
+	end component;
+	
+	component timer is
+		port (
+				clk, en, rst: in std_logic;
+				count: out std_logic_vector(3 downto 0);
+				tc: out std_logic
+				);
+	end component;
+	
+	component score is
+		port (
+				clk, en, rst: in std_logic;
+				count: out std_logic_vector(3 downto 0);
+				tc: out std_logic
+				);
+	end component;
+	
+	component round is
+		port (
+				clk, en, rst: in std_logic;
+				count: out std_logic_vector(4 downto 0);
+				tc: out std_logic
+				);
+	end component;
+	
+	component u1_map is
+		port	( 
+				address : in std_logic_vector(2 downto 0);
+				data : out std_logic_vector(6 downto 0) 
+				);
+	end component;
+	
+	component u2_map is
+		port	( 
+				address : in std_logic_vector(2 downto 0);
+				data : out std_logic_vector(6 downto 0) 
+				);
+	end component;
+	
+	component bit_comparator is
+		port (
+				inA, inB: in std_logic_vector(6 downto 0);
+				output: out std_logic
+				);
+	end component;
+	
+	component decod is
+		port (
+				data_in: in std_logic_vector(6 downto 0);
+				data_out: out std_logic_vector(6 downto 0);
+				error: out std_logic
+				);
+	end component;
+	
+	component decod_hexa is 
+		port	(
+				data_in: in std_logic_vector(3 downto 0); 
+				data_out: out std_logic_vector(6 downto 0)
+				);
+	end component;
+	
+	signal 	sel_4x1: std_logic_vector(1 downto 0);
+	signal 	h1, h2, h3, h4, counter_clk, comp_out, match,
+				end_game, end_time, error, user,
+				rst_sc1, rst_sc2, en_sc1, en_sc2: std_logic;
+	signal 	timer_count, show_user: std_logic_vector(3 downto 0);
+	signal 	user_try: std_logic_vector(9 downto 0);
+	signal 	mem1_out, mem2_out, mem_select: std_logic_vector(6 downto 0);
+	signal 	round_count: std_logic_vector(4 downto 0);
+	
+begin
+
+	--unidade temporizador
+	LEVEL: ffd_2b port map (e2, r2, clk, switch(1 downto 0), sel_4x1);
+	CONV: frequency_converter port map (clk, h1, h2, h3, h4);
+	SELETOR: mux4x1 port map (h1, h2, h3, h4, sel_4x1, counter_clk);
+	COUNTER: timer port map (counter_clk, e4, r4, timer_count, end_time);
+	SHOW5: d5 <= "1000110"; --C de contagem
+	SHOW4: decod_hexa port map (timer_count, d4);
+	end_time_out <=  end_time;
+	
+	--memorias
+	USERIN: ffd_10b port map (e1, r1, clk, switch, user_try);
+	MEM1: u1_map port map (user_try(9 downto 7), mem1_out);
+	MEM2: u2_map port map (user_try(9 downto 7), mem2_out);
+	SELMEM: mux2x1 port map (mem1_out, mem2_out, user, mem_select);
+	COMP: bit_comparator port map (switch(6 downto 0), mem_select, comp_out);
+	match <= comp_out and fire;
+	SHOW3: decod_hexa port map ('0'&user_try(9 downto 7), d3);
+	SHOW2: decod port map (user_try(6 downto 0), d2, error);
+	error_out <= error;
+	
+	--conta escore
+	rst_sc1 <= ((end_time or end_game or error) and (not user)) or rst;
+	en_sc1 <= match and (not user);
+	rst_sc2 <= ((end_time or end_game or error) and user) or rst;
+	en_sc2 <= match and user;
+	SC1: score port map (clk, rst_sc1, en_sc1, score1, win1);
+	SC2: score port map (clk, rst_sc2, en_sc2, score2, win2);
+	
+	-- conta round
+	RCOUNTER: round port map (e3, r3, clk, round_count, end_game);
+	show_user <= "0001" when user='1' else "0010";
+	SHOW1: decod_hexa port map (show_user, d1);
+	SHOW0: decod_hexa port map (round_count(3 downto 0), d0);
+	user <= round_count(0);
+	end_game_out <= end_game;
+	
+end architecture;

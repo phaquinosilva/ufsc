@@ -1,0 +1,18 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity paddle_datapath is
+
+generic (n1: positive := 10;
+			n2: positive := 4);
+
+port (
+		-- control input
+		init, sg_mux, somasub: in std_logic;
+		-- data input 
+		pY_init, p_height: in std_logic_vector(n1-1 downto 0);
+		p_speed: in std_logic_vector(n2-1 downto 0);
+		p_U, p_D: in std_logic;
+		p_Y: out std_logic_vector(n-1 downto 0);
+		cond_met: out std_logic	
+		);

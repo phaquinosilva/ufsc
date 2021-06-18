@@ -1,0 +1,21 @@
+Pedro Henrique Aquino Silva	Robson Zagre Júnior
+Num	Peso	Critério							Críticas e sugestões sobre o critério					Nota 
+1	0	Utilização correta da metodologia apresentada			Nao seguem a metodologia	
+2	0	Completude, corretude e descrição da especificação do sistema	
+3	1	Apresentação do relatório					Ok.									10 
+4	2	Identificação das Entradas e Saídas				Ok. 									10 
+5	0	Descrição e Captura do Comportamento				Como é que vocês projetaram blocos internos antes 
+										mesmo da captura do comportamento???	
+6	2	Especificação do algoritmo em software				Ok.									10 
+7	2	Representação do algoritmo através de uma FSMD			Voces decidiram colocar duas unidades internas, 
+										APESAR do algoritmo. A FSMD (que não é 																	especifica do bloco operativo) não representa o algoritmo		2 
+8	2	Extração das operações						Nao e apresentado							0 
+9	8	Projeto do Bloco Operativo					Nao e feito a partir da FSMD (algoritmo) 
+										e das operaçoes dele extraidas. Nao posso 																verificar a corretude							5 
+10	6	Projeto do Bloco de Controle					Apresenta diferentes FSMs. Difere de tudo que foi
+										ensinado, pois terah vários estados 																	ativos simultaneamente. Vai ficar bem mais 
+										complicado, mas ok. Apenas não segue a 																	metodologia apresentada							5 
+11	3	Projeto do Sistema Digital 					Ok, acho, pelo projeto feito						10 
+12	0	Outros aspectos:	
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+	26																		5,92

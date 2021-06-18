@@ -1,0 +1,172 @@
+\hypertarget{structstructures_1_1Trie_1_1Node}{}\section{Referência da Estrutura structures\+::Trie\+::Node}
+\label{structstructures_1_1Trie_1_1Node}\index{structures::Trie::Node@{structures::Trie::Node}}
+
+
+\mbox{\hyperlink{structstructures_1_1Trie_1_1Node}{Node}}.  
+
+
+
+
+{\ttfamily \#include $<$trie.\+h$>$}
+
+\subsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structstructures_1_1Trie_1_1Node_aa9593c9a81027a7f2cea784bcb5dcf8b}{Node}} ()
+\begin{DoxyCompactList}\small\item\em construtor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structstructures_1_1Trie_1_1Node_a041b9e64c7beca6aa364235fde984d3f}{Node}} (const char \&letra)
+\begin{DoxyCompactList}\small\item\em construtor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structstructures_1_1Trie_1_1Node}{Node}} $\ast$ \mbox{\hyperlink{structstructures_1_1Trie_1_1Node_a825f36b61a5878b622b77a4956756505}{insert}} (const string \&data\+\_\+)
+\begin{DoxyCompactList}\small\item\em insert \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structstructures_1_1Trie_1_1Node_a977ee185cc90869cf5f9d8d945aadf46}{remove}} (const string \&data\+\_\+)
+\begin{DoxyCompactList}\small\item\em remove \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structstructures_1_1Trie_1_1Node_ab038c557d82c3a97a94748f3e9552c51}{contains}} (const string \&data\+\_\+) const
+\begin{DoxyCompactList}\small\item\em contains \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structstructures_1_1Trie_1_1Node_ac02c6075d025bb80148c2888954194fb}{pos\+Comp}} (const unsigned long posicao\+\_\+, const unsigned long comprimento\+\_\+)
+\begin{DoxyCompactList}\small\item\em coloca posicao e comprimento \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structstructures_1_1Trie_1_1Node_a28f32c5d84cda1d3e0ecd31dcc5220a7}{get\+\_\+prefix}} (const string \&data\+\_\+) const
+\begin{DoxyCompactList}\small\item\em get prefix \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structstructures_1_1Trie_1_1Node_a4424baa5147ca5841e2d2183979f5def}{is\+\_\+prefix}} () const
+\begin{DoxyCompactList}\small\item\em is prefix \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structstructures_1_1Trie_1_1Node_a206815fbb1be0496007790134262c13a}{get\+Pos\+Comp}} (\mbox{\hyperlink{classstructures_1_1ArrayList}{Array\+List}}$<$ unsigned long $>$ \&array, const string \&data\+\_\+)
+\begin{DoxyCompactList}\small\item\em posicao e comprimento \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structstructures_1_1Trie_1_1Node_a3e7681ab1eed7b58db5fd33ef4a59e6d}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em destroi os nodes filhos \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{structstructures_1_1Trie_1_1Node_a9dee0e2ff6479a672187866cd9bb70a8}{clear\+Ptr}} ()
+\begin{DoxyCompactList}\small\item\em limpa os ptrs dos filhos \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structstructures_1_1Trie_1_1Node_a39d23e7e387688f1f0938fc311a04707}{possui\+Filhos}} ()
+\begin{DoxyCompactList}\small\item\em possui filhos \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+\mbox{\hyperlink{structstructures_1_1Trie_1_1Node}{Node}}. 
+
+\subsection{Construtores e Destrutores}
+\mbox{\Hypertarget{structstructures_1_1Trie_1_1Node_aa9593c9a81027a7f2cea784bcb5dcf8b}\label{structstructures_1_1Trie_1_1Node_aa9593c9a81027a7f2cea784bcb5dcf8b}} 
+\index{structures::Trie::Node@{structures::Trie::Node}!Node@{Node}}
+\index{Node@{Node}!structures::Trie::Node@{structures::Trie::Node}}
+\subsubsection{\texorpdfstring{Node()}{Node()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily structures\+::\+Trie\+::\+Node\+::\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+construtor 
+
+\mbox{\Hypertarget{structstructures_1_1Trie_1_1Node_a041b9e64c7beca6aa364235fde984d3f}\label{structstructures_1_1Trie_1_1Node_a041b9e64c7beca6aa364235fde984d3f}} 
+\index{structures::Trie::Node@{structures::Trie::Node}!Node@{Node}}
+\index{Node@{Node}!structures::Trie::Node@{structures::Trie::Node}}
+\subsubsection{\texorpdfstring{Node()}{Node()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily structures\+::\+Trie\+::\+Node\+::\+Node (\begin{DoxyParamCaption}\item[{const char \&}]{letra }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+construtor 
+
+
+
+\subsection{Funções membros}
+\mbox{\Hypertarget{structstructures_1_1Trie_1_1Node_a9dee0e2ff6479a672187866cd9bb70a8}\label{structstructures_1_1Trie_1_1Node_a9dee0e2ff6479a672187866cd9bb70a8}} 
+\index{structures::Trie::Node@{structures::Trie::Node}!clearPtr@{clearPtr}}
+\index{clearPtr@{clearPtr}!structures::Trie::Node@{structures::Trie::Node}}
+\subsubsection{\texorpdfstring{clearPtr()}{clearPtr()}}
+{\footnotesize\ttfamily void structures\+::\+Trie\+::\+Node\+::clear\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+limpa os ptrs dos filhos 
+
+\mbox{\Hypertarget{structstructures_1_1Trie_1_1Node_ab038c557d82c3a97a94748f3e9552c51}\label{structstructures_1_1Trie_1_1Node_ab038c557d82c3a97a94748f3e9552c51}} 
+\index{structures::Trie::Node@{structures::Trie::Node}!contains@{contains}}
+\index{contains@{contains}!structures::Trie::Node@{structures::Trie::Node}}
+\subsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily bool structures\+::\+Trie\+::\+Node\+::contains (\begin{DoxyParamCaption}\item[{const string \&}]{data\+\_\+ }\end{DoxyParamCaption}) const}
+
+
+
+contains 
+
+\mbox{\Hypertarget{structstructures_1_1Trie_1_1Node_a3e7681ab1eed7b58db5fd33ef4a59e6d}\label{structstructures_1_1Trie_1_1Node_a3e7681ab1eed7b58db5fd33ef4a59e6d}} 
+\index{structures::Trie::Node@{structures::Trie::Node}!destroy@{destroy}}
+\index{destroy@{destroy}!structures::Trie::Node@{structures::Trie::Node}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void structures\+::\+Trie\+::\+Node\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destroi os nodes filhos 
+
+\mbox{\Hypertarget{structstructures_1_1Trie_1_1Node_a28f32c5d84cda1d3e0ecd31dcc5220a7}\label{structstructures_1_1Trie_1_1Node_a28f32c5d84cda1d3e0ecd31dcc5220a7}} 
+\index{structures::Trie::Node@{structures::Trie::Node}!get\_prefix@{get\_prefix}}
+\index{get\_prefix@{get\_prefix}!structures::Trie::Node@{structures::Trie::Node}}
+\subsubsection{\texorpdfstring{get\_prefix()}{get\_prefix()}}
+{\footnotesize\ttfamily bool structures\+::\+Trie\+::\+Node\+::get\+\_\+prefix (\begin{DoxyParamCaption}\item[{const string \&}]{data\+\_\+ }\end{DoxyParamCaption}) const}
+
+
+
+get prefix 
+
+\mbox{\Hypertarget{structstructures_1_1Trie_1_1Node_a206815fbb1be0496007790134262c13a}\label{structstructures_1_1Trie_1_1Node_a206815fbb1be0496007790134262c13a}} 
+\index{structures::Trie::Node@{structures::Trie::Node}!getPosComp@{getPosComp}}
+\index{getPosComp@{getPosComp}!structures::Trie::Node@{structures::Trie::Node}}
+\subsubsection{\texorpdfstring{getPosComp()}{getPosComp()}}
+{\footnotesize\ttfamily bool structures\+::\+Trie\+::\+Node\+::get\+Pos\+Comp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classstructures_1_1ArrayList}{Array\+List}}$<$ unsigned long $>$ \&}]{array,  }\item[{const string \&}]{data\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+posicao e comprimento 
+
+\mbox{\Hypertarget{structstructures_1_1Trie_1_1Node_a825f36b61a5878b622b77a4956756505}\label{structstructures_1_1Trie_1_1Node_a825f36b61a5878b622b77a4956756505}} 
+\index{structures::Trie::Node@{structures::Trie::Node}!insert@{insert}}
+\index{insert@{insert}!structures::Trie::Node@{structures::Trie::Node}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structstructures_1_1Trie_1_1Node}{structures\+::\+Trie\+::\+Node}} $\ast$ structures\+::\+Trie\+::\+Node\+::insert (\begin{DoxyParamCaption}\item[{const string \&}]{data\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+insert 
+
+\mbox{\Hypertarget{structstructures_1_1Trie_1_1Node_a4424baa5147ca5841e2d2183979f5def}\label{structstructures_1_1Trie_1_1Node_a4424baa5147ca5841e2d2183979f5def}} 
+\index{structures::Trie::Node@{structures::Trie::Node}!is\_prefix@{is\_prefix}}
+\index{is\_prefix@{is\_prefix}!structures::Trie::Node@{structures::Trie::Node}}
+\subsubsection{\texorpdfstring{is\_prefix()}{is\_prefix()}}
+{\footnotesize\ttfamily bool structures\+::\+Trie\+::\+Node\+::is\+\_\+prefix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+is prefix 
+
+\mbox{\Hypertarget{structstructures_1_1Trie_1_1Node_ac02c6075d025bb80148c2888954194fb}\label{structstructures_1_1Trie_1_1Node_ac02c6075d025bb80148c2888954194fb}} 
+\index{structures::Trie::Node@{structures::Trie::Node}!posComp@{posComp}}
+\index{posComp@{posComp}!structures::Trie::Node@{structures::Trie::Node}}
+\subsubsection{\texorpdfstring{posComp()}{posComp()}}
+{\footnotesize\ttfamily void structures\+::\+Trie\+::\+Node\+::pos\+Comp (\begin{DoxyParamCaption}\item[{const unsigned long}]{posicao\+\_\+,  }\item[{const unsigned long}]{comprimento\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+coloca posicao e comprimento 
+
+\mbox{\Hypertarget{structstructures_1_1Trie_1_1Node_a39d23e7e387688f1f0938fc311a04707}\label{structstructures_1_1Trie_1_1Node_a39d23e7e387688f1f0938fc311a04707}} 
+\index{structures::Trie::Node@{structures::Trie::Node}!possuiFilhos@{possuiFilhos}}
+\index{possuiFilhos@{possuiFilhos}!structures::Trie::Node@{structures::Trie::Node}}
+\subsubsection{\texorpdfstring{possuiFilhos()}{possuiFilhos()}}
+{\footnotesize\ttfamily bool structures\+::\+Trie\+::\+Node\+::possui\+Filhos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+possui filhos 
+
+\mbox{\Hypertarget{structstructures_1_1Trie_1_1Node_a977ee185cc90869cf5f9d8d945aadf46}\label{structstructures_1_1Trie_1_1Node_a977ee185cc90869cf5f9d8d945aadf46}} 
+\index{structures::Trie::Node@{structures::Trie::Node}!remove@{remove}}
+\index{remove@{remove}!structures::Trie::Node@{structures::Trie::Node}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily bool structures\+::\+Trie\+::\+Node\+::remove (\begin{DoxyParamCaption}\item[{const string \&}]{data\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+remove 
+
+
+
+A documentação para essa estrutura foi gerada a partir do seguinte arquivo\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{trie_8h}{trie.\+h}}\end{DoxyCompactItemize}

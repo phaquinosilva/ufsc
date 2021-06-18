@@ -1,0 +1,18 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity temp_sel_nivel is
+
+port (
+		sel: in std_logic_vector(1 downto 0);
+		fire, init, reset: in std_logic;
+		reset: in std_logic;
+		user: out std_logic;
+		--retorna os valores dos quatro displays
+		d3, d2, d1, d0: out std_logic_vector(6 downto 0)
+		);
+
+end entity;
+
+architecture bhv of temp_sel_nivel is
+	

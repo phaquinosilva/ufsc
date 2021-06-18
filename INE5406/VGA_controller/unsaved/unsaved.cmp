@@ -1,0 +1,14 @@
+	component unsaved is
+		port (
+			clk_clk                       : in  std_logic                     := 'X';             -- clk
+			clock_clk                     : in  std_logic                     := 'X';             -- clk
+			reset_reset_n                 : in  std_logic                     := 'X';             -- reset_n
+			rest_reset                    : in  std_logic                     := 'X';             -- reset
+			vga_stream_sync_data          : in  std_logic_vector(29 downto 0) := (others => 'X'); -- data
+			vga_stream_sync_startofpacket : in  std_logic                     := 'X';             -- startofpacket
+			vga_stream_sync_endofpacket   : in  std_logic                     := 'X';             -- endofpacket
+			vga_stream_sync_valid         : in  std_logic                     := 'X';             -- valid
+			vga_stream_sync_ready         : out std_logic                                         -- ready
+		);
+	end component unsaved;
+

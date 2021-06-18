@@ -1,0 +1,315 @@
+\hypertarget{classstructures_1_1ArrayList}{}\section{Referência do $<$em$>$Template$<$/em$>$ da Classe structures\+::Array\+List$<$ T $>$}
+\label{classstructures_1_1ArrayList}\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+
+
+Classe Lista.  
+
+
+
+
+{\ttfamily \#include $<$array\+\_\+list.\+h$>$}
+
+\subsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstructures_1_1ArrayList_a1fab93fc7adb5e4825f51dda6d4a0266}{Array\+List}} ()
+\begin{DoxyCompactList}\small\item\em construtor basico \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstructures_1_1ArrayList_adfdce2839f1d1197bb0fb9cc9e1ddd2a}{Array\+List}} (std\+::size\+\_\+t \mbox{\hyperlink{classstructures_1_1ArrayList_a8f0772886f296281ea03af9578f67969}{max\+\_\+size}})
+\begin{DoxyCompactList}\small\item\em contrutor com parametros \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstructures_1_1ArrayList_a7b4a27fb73c49bb495916b45f061133c}{$\sim$\+Array\+List}} ()
+\begin{DoxyCompactList}\small\item\em deletar lista \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstructures_1_1ArrayList_afcef88bcb3924751be3c188bad43531b}{clear}} ()
+\begin{DoxyCompactList}\small\item\em limpa a lista \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstructures_1_1ArrayList_a48f49e0fc24d787f1d484cd72581f4c6}{push\+\_\+back}} (const T \&data)
+\begin{DoxyCompactList}\small\item\em bota valor no fim da lista \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstructures_1_1ArrayList_a3920da2ade2ac6d1045f464d71a4f745}{push\+\_\+front}} (const T \&data)
+\begin{DoxyCompactList}\small\item\em bota valor no inicio da lista \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstructures_1_1ArrayList_a06a3db6492b5611c7e9784f022aa0493}{insert}} (const T \&data, std\+::size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em insere valor em uma posicao indicada \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstructures_1_1ArrayList_a7e8c6476fac5af0c3d462c5546e5f8fe}{insert\+\_\+sorted}} (const T \&data)
+\begin{DoxyCompactList}\small\item\em insere na lista por ordem de tamanho \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classstructures_1_1ArrayList_ab168d19e50911171715ed5ceccde79b1}{pop}} (std\+::size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em retorna um elemento de uma posicao \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classstructures_1_1ArrayList_ae9049f86f313cb35075218640e858f6d}{pop\+\_\+back}} ()
+\begin{DoxyCompactList}\small\item\em retorna um elemento do final \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classstructures_1_1ArrayList_a8f8540ed89c0482099bf7768a668d4e5}{pop\+\_\+front}} ()
+\begin{DoxyCompactList}\small\item\em retorna o primeiro elemento \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstructures_1_1ArrayList_a50206e6cd81935fc838f6fb45cfd9a7d}{remove}} (const T \&data)
+\begin{DoxyCompactList}\small\item\em remove um dado \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classstructures_1_1ArrayList_a4bf1b945b8e6914ce8988dc0bbb6fc66}{full}} () const
+\begin{DoxyCompactList}\small\item\em retorna se esta cheia \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classstructures_1_1ArrayList_ae63920a127efd82e610e72b3ef5d681f}{empty}} () const
+\begin{DoxyCompactList}\small\item\em retorna se esta vazia \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classstructures_1_1ArrayList_ac8783a85dfd89c6e7e779b33ab475d71}{contains}} (const T \&data) const
+\begin{DoxyCompactList}\small\item\em retorna se conter o valor \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classstructures_1_1ArrayList_a00be80d3ae698b91d485507f44d82e84}{find}} (const T \&data) const
+\begin{DoxyCompactList}\small\item\em retorna a posicao do valor \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classstructures_1_1ArrayList_ab3ed0971900e42d5009992a2e381a95a}{size}} () const
+\begin{DoxyCompactList}\small\item\em retorna a qtde de elementos \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classstructures_1_1ArrayList_a8f0772886f296281ea03af9578f67969}{max\+\_\+size}} () const
+\begin{DoxyCompactList}\small\item\em retorna o tamanhho maximo da lista \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{classstructures_1_1ArrayList_ac21118842acb1131b3b64569c1e5c732}{at}} (std\+::size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em retorna dado na posição do index \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{classstructures_1_1ArrayList_a1ff71f9c1ebce9408c52115651ab4e77}{operator\mbox{[}$\,$\mbox{]}}} (std\+::size\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em retorna dado na posição do index. Sobrescreve operador \mbox{[}\mbox{]} \end{DoxyCompactList}\item 
+const T \& \mbox{\hyperlink{classstructures_1_1ArrayList_a0906cf7f36a593688704135a8201543f}{at}} (std\+::size\+\_\+t index) const
+\item 
+const T \& \mbox{\hyperlink{classstructures_1_1ArrayList_a14f95d5eba667fdbb3d826f71a16fc5c}{operator\mbox{[}$\,$\mbox{]}}} (std\+::size\+\_\+t index) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+\subsubsection*{template$<$typename T$>$\newline
+class structures\+::\+Array\+List$<$ T $>$}
+
+Classe Lista. 
+
+\subsection{Construtores e Destrutores}
+\mbox{\Hypertarget{classstructures_1_1ArrayList_a1fab93fc7adb5e4825f51dda6d4a0266}\label{classstructures_1_1ArrayList_a1fab93fc7adb5e4825f51dda6d4a0266}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!ArrayList@{ArrayList}}
+\index{ArrayList@{ArrayList}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{ArrayList()}{ArrayList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::\mbox{\hyperlink{classstructures_1_1ArrayList}{Array\+List}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+construtor basico 
+
+\mbox{\Hypertarget{classstructures_1_1ArrayList_adfdce2839f1d1197bb0fb9cc9e1ddd2a}\label{classstructures_1_1ArrayList_adfdce2839f1d1197bb0fb9cc9e1ddd2a}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!ArrayList@{ArrayList}}
+\index{ArrayList@{ArrayList}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{ArrayList()}{ArrayList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::\mbox{\hyperlink{classstructures_1_1ArrayList}{Array\+List}} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{max\+\_\+size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+contrutor com parametros 
+
+\mbox{\Hypertarget{classstructures_1_1ArrayList_a7b4a27fb73c49bb495916b45f061133c}\label{classstructures_1_1ArrayList_a7b4a27fb73c49bb495916b45f061133c}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!````~ArrayList@{$\sim$ArrayList}}
+\index{````~ArrayList@{$\sim$ArrayList}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{$\sim$ArrayList()}{~ArrayList()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classstructures_1_1ArrayList}{Array\+List}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+deletar lista 
+
+
+
+\subsection{Funções membros}
+\mbox{\Hypertarget{classstructures_1_1ArrayList_ac21118842acb1131b3b64569c1e5c732}\label{classstructures_1_1ArrayList_ac21118842acb1131b3b64569c1e5c732}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!at@{at}}
+\index{at@{at}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \& \mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::at (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+
+
+retorna dado na posição do index 
+
+\mbox{\Hypertarget{classstructures_1_1ArrayList_a0906cf7f36a593688704135a8201543f}\label{classstructures_1_1ArrayList_a0906cf7f36a593688704135a8201543f}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!at@{at}}
+\index{at@{at}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{at()}{at()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T \& \mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::at (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption}) const}
+
+versão const da função at. \begin{DoxySeeAlso}{Veja também}
+\mbox{\hyperlink{classstructures_1_1ArrayList_ac21118842acb1131b3b64569c1e5c732}{at(std\+::size\+\_\+t index)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classstructures_1_1ArrayList_afcef88bcb3924751be3c188bad43531b}\label{classstructures_1_1ArrayList_afcef88bcb3924751be3c188bad43531b}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!clear@{clear}}
+\index{clear@{clear}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+limpa a lista 
+
+\mbox{\Hypertarget{classstructures_1_1ArrayList_ac8783a85dfd89c6e7e779b33ab475d71}\label{classstructures_1_1ArrayList_ac8783a85dfd89c6e7e779b33ab475d71}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!contains@{contains}}
+\index{contains@{contains}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::contains (\begin{DoxyParamCaption}\item[{const T \&}]{data }\end{DoxyParamCaption}) const}
+
+
+
+retorna se conter o valor 
+
+\mbox{\Hypertarget{classstructures_1_1ArrayList_ae63920a127efd82e610e72b3ef5d681f}\label{classstructures_1_1ArrayList_ae63920a127efd82e610e72b3ef5d681f}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!empty@{empty}}
+\index{empty@{empty}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+retorna se esta vazia 
+
+\mbox{\Hypertarget{classstructures_1_1ArrayList_a00be80d3ae698b91d485507f44d82e84}\label{classstructures_1_1ArrayList_a00be80d3ae698b91d485507f44d82e84}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!find@{find}}
+\index{find@{find}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::find (\begin{DoxyParamCaption}\item[{const T \&}]{data }\end{DoxyParamCaption}) const}
+
+
+
+retorna a posicao do valor 
+
+\mbox{\Hypertarget{classstructures_1_1ArrayList_a4bf1b945b8e6914ce8988dc0bbb6fc66}\label{classstructures_1_1ArrayList_a4bf1b945b8e6914ce8988dc0bbb6fc66}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!full@{full}}
+\index{full@{full}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{full()}{full()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+retorna se esta cheia 
+
+\mbox{\Hypertarget{classstructures_1_1ArrayList_a06a3db6492b5611c7e9784f022aa0493}\label{classstructures_1_1ArrayList_a06a3db6492b5611c7e9784f022aa0493}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!insert@{insert}}
+\index{insert@{insert}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::insert (\begin{DoxyParamCaption}\item[{const T \&}]{data,  }\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+
+
+insere valor em uma posicao indicada 
+
+\mbox{\Hypertarget{classstructures_1_1ArrayList_a7e8c6476fac5af0c3d462c5546e5f8fe}\label{classstructures_1_1ArrayList_a7e8c6476fac5af0c3d462c5546e5f8fe}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!insert\_sorted@{insert\_sorted}}
+\index{insert\_sorted@{insert\_sorted}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{insert\_sorted()}{insert\_sorted()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::insert\+\_\+sorted (\begin{DoxyParamCaption}\item[{const T \&}]{data }\end{DoxyParamCaption})}
+
+
+
+insere na lista por ordem de tamanho 
+
+\mbox{\Hypertarget{classstructures_1_1ArrayList_a8f0772886f296281ea03af9578f67969}\label{classstructures_1_1ArrayList_a8f0772886f296281ea03af9578f67969}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!max\_size@{max\_size}}
+\index{max\_size@{max\_size}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{max\_size()}{max\_size()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::max\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+retorna o tamanhho maximo da lista 
+
+\mbox{\Hypertarget{classstructures_1_1ArrayList_a1ff71f9c1ebce9408c52115651ab4e77}\label{classstructures_1_1ArrayList_a1ff71f9c1ebce9408c52115651ab4e77}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \& \mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+
+
+retorna dado na posição do index. Sobrescreve operador \mbox{[}\mbox{]} 
+
+\mbox{\Hypertarget{classstructures_1_1ArrayList_a14f95d5eba667fdbb3d826f71a16fc5c}\label{classstructures_1_1ArrayList_a14f95d5eba667fdbb3d826f71a16fc5c}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T \& \mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption}) const}
+
+versão const da função operator\mbox{[}\mbox{]}. \begin{DoxySeeAlso}{Veja também}
+\mbox{\hyperlink{classstructures_1_1ArrayList_a1ff71f9c1ebce9408c52115651ab4e77}{operator\mbox{[}$\,$\mbox{]}(std\+::size\+\_\+t index)}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classstructures_1_1ArrayList_ab168d19e50911171715ed5ceccde79b1}\label{classstructures_1_1ArrayList_ab168d19e50911171715ed5ceccde79b1}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!pop@{pop}}
+\index{pop@{pop}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::pop (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+
+
+retorna um elemento de uma posicao 
+
+\mbox{\Hypertarget{classstructures_1_1ArrayList_ae9049f86f313cb35075218640e858f6d}\label{classstructures_1_1ArrayList_ae9049f86f313cb35075218640e858f6d}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!pop\_back@{pop\_back}}
+\index{pop\_back@{pop\_back}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{pop\_back()}{pop\_back()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::pop\+\_\+back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retorna um elemento do final 
+
+\mbox{\Hypertarget{classstructures_1_1ArrayList_a8f8540ed89c0482099bf7768a668d4e5}\label{classstructures_1_1ArrayList_a8f8540ed89c0482099bf7768a668d4e5}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!pop\_front@{pop\_front}}
+\index{pop\_front@{pop\_front}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{pop\_front()}{pop\_front()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::pop\+\_\+front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retorna o primeiro elemento 
+
+\mbox{\Hypertarget{classstructures_1_1ArrayList_a48f49e0fc24d787f1d484cd72581f4c6}\label{classstructures_1_1ArrayList_a48f49e0fc24d787f1d484cd72581f4c6}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const T \&}]{data }\end{DoxyParamCaption})}
+
+
+
+bota valor no fim da lista 
+
+\mbox{\Hypertarget{classstructures_1_1ArrayList_a3920da2ade2ac6d1045f464d71a4f745}\label{classstructures_1_1ArrayList_a3920da2ade2ac6d1045f464d71a4f745}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!push\_front@{push\_front}}
+\index{push\_front@{push\_front}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{push\_front()}{push\_front()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::push\+\_\+front (\begin{DoxyParamCaption}\item[{const T \&}]{data }\end{DoxyParamCaption})}
+
+
+
+bota valor no inicio da lista 
+
+\mbox{\Hypertarget{classstructures_1_1ArrayList_a50206e6cd81935fc838f6fb45cfd9a7d}\label{classstructures_1_1ArrayList_a50206e6cd81935fc838f6fb45cfd9a7d}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!remove@{remove}}
+\index{remove@{remove}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::remove (\begin{DoxyParamCaption}\item[{const T \&}]{data }\end{DoxyParamCaption})}
+
+
+
+remove um dado 
+
+\mbox{\Hypertarget{classstructures_1_1ArrayList_ab3ed0971900e42d5009992a2e381a95a}\label{classstructures_1_1ArrayList_ab3ed0971900e42d5009992a2e381a95a}} 
+\index{structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}!size@{size}}
+\index{size@{size}!structures::ArrayList$<$ T $>$@{structures::ArrayList$<$ T $>$}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classstructures_1_1ArrayList}{structures\+::\+Array\+List}}$<$ T $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+retorna a qtde de elementos 
+
+
+
+A documentação para essa classe foi gerada a partir do seguinte arquivo\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{array__list_8h}{array\+\_\+list.\+h}}\end{DoxyCompactItemize}
