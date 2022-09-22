@@ -2,6 +2,9 @@
 
 Este repositório contém os arquivos produzidos por mim em atividades acadêmicas durante a graduação em Ciência da Computação na Universidade Federal de Santa Catarina.
 
+NOTA: Abaixo constam todas as disciplinas cursadas durante a graduação, exceto Cálculos I e II, Álgebra Linear e Física I e II, que são disciplinas teóricas. 
+As disciplinas que não são links não contém artefatos relevantes para serem compartilhados.
+
 ### Disciplinas obrigatórias
 
 | Código  | Disciplina                |
