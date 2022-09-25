@@ -1,0 +1,99 @@
+Gramática fatorada:
+P ::= K L | b K L e
+K ::= c K | T V | V
+T ::= t T'
+T' ::= T | &
+V ::= v V'
+V' ::= V | &
+L ::= J
+J ::= a J' | e J'
+J' ::= & | c J'
+
+
+Mostrando passos para o reconhecimento da sentença b t t t t v v v e c e com a gramática:
+P ::= K L | b K L e
+K ::= c K | T V | V
+T ::= t T'
+T' ::= T | &
+V ::= v V'
+V' ::= V | &
+L ::= J
+J ::= a J' | e J'
+J' ::= & | c J'
+
+Conjuntos FIRST
+FIRST(b) = {'b'}
+FIRST(e) = {'e'}
+FIRST(t) = {'t'}
+FIRST(v) = {'v'}
+FIRST(a) = {'a'}
+FIRST(c) = {'c'}
+FIRST(&) = {'&'}
+FIRST(P) = {'t', 'b', 'v', 'c'}
+FIRST(K) = {'v', 't', 'c'}
+FIRST(T) = {'t'}
+FIRST(V) = {'v'}
+FIRST(L) = {'e', 'a'}
+FIRST(J) = {'e', 'a'}
+FIRST(J') = {'&', 'c'}
+FIRST(T') = {'&', 't'}
+FIRST(V') = {'&', 'v'}
+Conjuntos FOLLOW
+FOLLOW(P) = {'$'}
+FOLLOW(K) = {'e', 'a'}
+FOLLOW(T) = {'v'}
+FOLLOW(V) = {'e', 'a'}
+FOLLOW(L) = {'e', '$'}
+FOLLOW(J) = {'e', '$'}
+FOLLOW(J') = {'e', '$'}
+FOLLOW(T') = {'v'}
+FOLLOW(V') = {'e', 'a'}
+
+Tabela de transição LL(1)
+          v        t        c  ...    $        e        a
+P    [K, L]   [K, L]   [K, L]  ...    -        -        -
+K       [V]   [T, V]   [c, K]  ...    -        -        -
+T         -  [t, T']        -  ...    -        -        -
+T'      [&]      [T]        -  ...  [&]        -        -
+V   [v, V']        -        -  ...    -        -        -
+V'      [V]        -        -  ...  [&]      [&]      [&]
+L         -        -        -  ...    -      [J]      [J]
+J         -        -        -  ...    -  [e, J']  [a, J']
+J'        -        -  [c, J']  ...  [&]      [&]        -
+
+[9 rows x 7 columns]
+
+Cabeçote: b; Pilha: ['$', 'P']
+Cabeçote: b; Pilha: ['$', 'e', 'L', 'K', 'b']
+Cabeçote: t; Pilha: ['$', 'e', 'L', 'K']
+Cabeçote: t; Pilha: ['$', 'e', 'L', 'V', 'T']
+Cabeçote: t; Pilha: ['$', 'e', 'L', 'V', "T'", 't']
+Cabeçote: t; Pilha: ['$', 'e', 'L', 'V', "T'"]
+Cabeçote: t; Pilha: ['$', 'e', 'L', 'V', 'T']
+Cabeçote: t; Pilha: ['$', 'e', 'L', 'V', "T'", 't']
+Cabeçote: t; Pilha: ['$', 'e', 'L', 'V', "T'"]
+Cabeçote: t; Pilha: ['$', 'e', 'L', 'V', 'T']
+Cabeçote: t; Pilha: ['$', 'e', 'L', 'V', "T'", 't']
+Cabeçote: t; Pilha: ['$', 'e', 'L', 'V', "T'"]
+Cabeçote: t; Pilha: ['$', 'e', 'L', 'V', 'T']
+Cabeçote: t; Pilha: ['$', 'e', 'L', 'V', "T'", 't']
+Cabeçote: v; Pilha: ['$', 'e', 'L', 'V', "T'"]
+Cabeçote: v; Pilha: ['$', 'e', 'L', 'V']
+Cabeçote: v; Pilha: ['$', 'e', 'L', "V'", 'v']
+Cabeçote: v; Pilha: ['$', 'e', 'L', "V'"]
+Cabeçote: v; Pilha: ['$', 'e', 'L', 'V']
+Cabeçote: v; Pilha: ['$', 'e', 'L', "V'", 'v']
+Cabeçote: v; Pilha: ['$', 'e', 'L', "V'"]
+Cabeçote: v; Pilha: ['$', 'e', 'L', 'V']
+Cabeçote: v; Pilha: ['$', 'e', 'L', "V'", 'v']
+Cabeçote: e; Pilha: ['$', 'e', 'L', "V'"]
+Cabeçote: e; Pilha: ['$', 'e', 'L']
+Cabeçote: e; Pilha: ['$', 'e', 'J']
+Cabeçote: e; Pilha: ['$', 'e', "J'", 'e']
+Cabeçote: c; Pilha: ['$', 'e', "J'"]
+Cabeçote: c; Pilha: ['$', 'e', "J'", 'c']
+Cabeçote: e; Pilha: ['$', 'e', "J'"]
+Cabeçote: e; Pilha: ['$', 'e']
+Cabeçote: $; Pilha: ['$']
+
+aceita sentença

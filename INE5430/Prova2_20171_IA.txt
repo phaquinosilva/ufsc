@@ -1,0 +1,381 @@
+
+
+A prova começou as 8:00 e terminou exatamente as 9:50, por que ele tinha outra para para aplicar as 10:10 no EFI.
+
+
+
+
+Pergunta 1, (2 pontos)
+
+Sabe-se que 10% das pessoas possui casa própria, 30% moram com parentes de favor e o restante paga aluguel.
+80% dos que tem casa própria tem cachorro... 
+30% dos que alugam casas veem donos passeando com os cachorros...
+50% dos que moram de favor ajuntam merda dos cachorros dos outros para manter a rua limpa.
+ninguém de aluga casas ajunta merda dos cachorro dos outros...
+...
+
+a) Monte a Rede bayesiana do sistema descrito com as tabelas, variavies, setas, o negócio completo como perguntado na
+parte 2 do Trabalho Prático 3 - Raciocínio Probalístico Tarefa
+
+b) Qual a probabilidade das pessoas que ...
+
+
+PARTE 2
+A “cola” é uma falha de qualquer sistema educacional, tendo sido objeto de estudos recentes.
+Sabe-se que 10% da população estudantil frequenta o Ensino Universitário, 30% o Ensino
+Secundário, e os restantes o Ensino Fundamental. Dos alunos que frequentam a Universidade
+60% colam, sendo a percentagem dos alunos que colam no Ensino Secundário é de 80%; os
+alunos do Fundamental não colam. Todos os alunos do Secundário já viram os seus colegas
+colando alguma vez, esta percentagem desce para 80% no caso dos Universitários. Quanto aos 
+alunos do Fundamental, 10 % afirmam que já viram os seus colegas colando (os alunos do
+Fundamental às vezes mentem). Os alunos do Fundamental nunca estudam para as provas,
+enquanto que 50% dos Universitários e 50% dos alunos do Secundário dizem que estudam. Os
+alunos que colam e estudam para as provas sentem-se penalizados na nota em 10% dos casos,
+esta percentagem cai para 1% para os alunos que estudam, mas não colam. Os alunos que não
+estudam para as provas nunca se sentem penalizados na nota.
+a) Modele a situação anterior com uma Rede Bayesiana, indicando as variáveis aleatórias, seus
+domínios, topologia da rede e tabelas de probabilidade condicionais.
+b) Calcule a probabilidade de um aluno colar.
+c) Calcule a probabilidade de um aluno frequentar o ensino Secundário dado que ele viu algum
+colega colando e que se sentiu penalizado na nota.
+
+
+
+
+Pergunta 2, (2 pontos)
+
+Sistema fuzzy esquisito
+
+Você está para escolher uma oferta de emprego. Há 4 ofertas distintas classificadas como:
+
+                      Oferta 1,  Oferta 2,  Oferta 3,  Oferta 4, 
+Salario ruim         . 0,1    .          .          .          .
+Salario medio        . 0,5    .          .          .          .
+Salario bom          .        .          .          .          .
+
+Distancia perto      . 0,25   .          .          .          .
+Distancia longe      . 0,75   .          .          .          .
+
+Interesse baixo      . 0      .          .          .          .
+Interesse pequeno    .        .          .          .          .
+Interesse grande     .        .          .          .          .
+
+
+E as seguintes regras fuzzy:
+
+1. Se o Salario é ruim e a Distancia é perto e o interesse é baixo então a oferta é ruim
+2. ... então a oferta é média
+3. Se o Salario é bom e o Interesse e grande então a oferta é boa
+4. 
+5. 
+6. 
+
+
+Preencha a tabela fuzzy a seguir com os valores de pertinencia fuzzy para as ofertas do tipo boa, media e ruim:
+
+          Oferta boa,  Oferta media,  Oferta ruim,
+Oferta 1 .          .              .             .
+Oferta 2 .          .              .             .
+Oferta 3 .          .              .             .
+Oferta 4 .          .              .             .
+
+Agora defuzzifique os valores obtidos e diga e justifique quais das ofertas de emprego é a melhor de todas?
+
+
+
+
+Pergunta 3, (1 ponto)
+
+Era de assinalar, dados os cromossomos em forma de vetor A=000101001, B=01010101, e C=10010101 e seus filhos
+D=001010101 e E=010101011 depois de algum cruzamento e/ou mutação entre algum dos pais. Assinale a resposta correta:
+
+a) Os pais A e B foram cruzados pelo alritmo bla, bla crossolver.
+b) Os pais A e C foram cruzados pelo alritmo bla, bla crossolver.
+c) Os pais A e B foram cruzados pelo alritmo bla, bla crossolver com mutação bla bla nos filhos D e E.
+d) Os pais A e C foram cruzados pelo alritmo bla, bla crossolver com mutação bla bla nos filhos D e E.
+e) Os pais B e C foram cruzados pelo alritmo bla, bla crossolver com mutação bla bla nos filhos D e E.
+
+
+
+
+Pergunta 4, (1 ponto)
+
+PosComp2008
+Questão 9
+Analise as seguintes afirmativas sobre redes neurais sem ciclos dirigidos, sendo n o
+número de neurônios e m o número de conexões.
+I. O processo de treinamento da rede pode ocorrer tanto em um espaço n -dimensional
+quanto em um espaço m -dimensional. A escolha é uma questão de eficiência, dependendo de como se relacionem n e m .
+II. Uma vez treinada, o uso da rede consiste em aplicar uma entrada e esperar até que
+ocorra convergência para que seja obtida a saída.
+III. O processo de treinamento consiste em obter um vetor em um espaço pelo menos m -dimensional. Esse vetor é obtido por meio de um processo de otimização que
+busca minimizar o erro sobre as instâncias de treino.
+IV. O processo de treinamento consiste em obter um vetor em um espaço pelo menos m -dimensional. Esse vetor é obtido por meio de um processo de otimização que
+busca minimizar o erro de generalização.
+A análise permite concluir que
+
+A) apenas as afirmativas I e II estão corretas. 
+B) apenas as afirmativas II e III estão corretas. 
+C) apenas as afirmativas II e IV estão corretas. 
+D) apenas a afirmativa III está correta. 
+E) todas as afirmativas estão corretas.
+
+
+
+
+
+Pergunta 5, (1 pontos)
+
+a) O que pode acontecer se a taxa de mutação da rede neural for muito alta?
+b) O que pode acontecer se a taxa de mutação for zero (0)?
+
+
+
+
+
+Pergunta 6, (2 pontos)
+
+a) 
+b) O que acontece se a taxa de aprendizagem for muito alta para um rede neural?
+c) 
+d) Qual a utilidade/impacto termo de momento?
+
+
+
+
+
+Pergunta 7, (1 pontos)
+
+PosComp2010
+66) Com base no conhecimento sobre Redes Neurais Artificiais, considere as afirmativas a seguir.
+I. A função booleana ou exclusivo (XOR) pode ser implementada usando uma rede perceptron de camada
+única.
+II. Redes Neurais Artificiais do tipo MLP (Multilayer Perceptron) são capazes de classificar padrões de
+entrada não linearmente separáveis.
+III. Retropropagação (backpropagation) é um algoritmo de aprendizagem supervisionada.
+IV. Redes Neurais Artificiais são apropriadas para a prova automática de teoremas.
+Assinale a alternativa correta.
+a) Somente as afirmativas I e IV são corretas.
+b) Somente as afirmativas II e III são corretas.
+c) Somente as afirmativas III e IV são corretas.
+d) Somente as afirmativas I, II e III são corretas.
+e) Somente as afirmativas I, II e IV são corretas
+
+Ver resposta no final:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Outras perguntas de IA de outras provas da poscomp:
+
+
+63 Observe as propriedades a seguir.
+i. Algoritmo de Aprendizado Indutivo como parte integrada do método.
+ii. Capacidade de generalização do aprendizado a partir de exemplos e avaliação do treinamento usando
+validação cruzada (cross-validation).
+iii. Uso do ganho de informação como critério de decisão ao ponderar sobre a escolha de atributos.
+iv. Algoritmo aceita o tratamento de atributos contínuos (quantitativos) ou discretos (qualitativos).
+Assinale a alternativa que apresenta a técnica de Inteligência Artificial que reúne todas as propriedades
+listadas.
+a) Árvores de Decisão (C4.5).
+b) Redes Neurais Artificiais (Back-Propagation).
+c) Algoritmos Genéticos (Michigan Approach).
+d) Conjuntos e Lógica Fuzzy (FIS - Fuzzy Inference System).
+e) Sistemas Especialistas (Forward Chaining).
+
+
+67 Considerando as Redes Neurais Artificiais, relacione a coluna da esquerda com a da direita.
+(I) Algoritmo Backpropagation. (A) Nome dado às redes neurais artificiais que possuem camadas
+ocultas.
+(II) Perceptron. (B) Nome alternativo que envolve a teoria de redes neurais artificiais.
+(III) Redes Recorrentes. (C) Técnica que implementa um declínio de gradiente no espaço de
+parâmetros, a fim de minimizar o erro de saída.
+(IV) MLPs. (D) Redes neurais de alimentação direta com uma única camada.
+(V) Modelos Conexionistas. (E) Redes neurais artificiais com realimentação.
+Assinale a alternativa que contém a associação correta.
+a) I-A, II-B, III-C, IV-D, V-E.
+b) I-C, II-D, III-E, IV-A, V-B.
+c) I-C, II-B, III-A, IV-D, V-E.
+d) I-C, II-D, III-E, IV-B, V-A.
+e) I-A, II-C, III-E, IV-D, V-B
+
+
+67.2 Em relação aos mapas auto-organizáveis, relacione os termos técnicos, na coluna da esquerda, com suas
+definições, na coluna da direita.
+(I) Agrupamento. (A) Define quantos neurônios em torno do vencedor terão seus pesos
+ajustados, ou seja, define a área de influência do nó vencedor. Sua
+arquitetura pode assumir vários formatos diferentes.
+(II) Aprendizado competitivo. (B) Organização das classes na camada de saída de um Mapa de
+Kohonen. Embora não seja essencial, os nós dessa camada normalmente
+são organizados em forma de grade.
+(III) Neurônio vencedor. (C) Rede Neural que pode ter conexões que voltem dos nós de saída
+aos nós de entrada e que pode ter também conexões arbitrárias
+entre quaisquer nós. Desse modo, seu estado interno pode ser alterado
+conforme conjuntos de entradas são apresentados à rede.
+(IV) Redes recorrentes. (D) Resultado de um mecanismo que permite o direito de responder a
+um específico subconjunto de dados, de forma que somente um
+neurônio de saída, ou um neurônio por grupo, esteja ativo em um
+determinado instante.
+(V) Vizinhança. (E) Técnica que usa o princípio de que apenas um neurônio fornece a
+saída da rede em resposta a uma entrada.
+Assinale a alternativa que contém a associação correta.
+a) I-A, II-C, III-E, IV-D, V-B.
+b) I-B, II-A, III-E, IV-C, V-D.
+c) I-B, II-E, III-D, IV-C, V-A.
+d) I-E, II-A, III-B, IV-D, V-C.
+e) I-E, II-C, III-D, IV-A, V-B.
+
+
+69 O aprendizado de máquina pode ser definido como o campo da Inteligência Artificial que visa à construção
+de sistemas que se aperfeiçoam automaticamente com a experiência.
+Assinale a alternativa que apresenta, corretamente, técnicas e/ou algoritmos característicos da área de
+aprendizado de máquina.
+a) Backtracking, Lógica Fuzzy e Algoritmos Genéticos.
+b) Q-learning, Backtracking e Quicksort.
+c) Q-learning, Sarsa e Backpropagation.
+d) Redes de Hopfield, Lógica Fuzzy e Simulated Annealing.
+e) Simulated Annealing, Sarsa e Hill-climbing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://www.sbc.org.br/documentos-da-sbc/category/153-provas-e-gabaritos-do-poscomp
+http://www.sbc.org.br/documentos-da-sbc/send/160-2010/859-cadernodequestes-ano2010
+
+66)   b
+63)   a
+67)   b
+67.2) c
+69)   c
+9)    d
+
+
+
+
+

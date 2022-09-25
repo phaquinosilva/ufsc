@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "primes"
+version = "0.1.0"
+description = ""
+authors = ["Pedro Aquino <phaquino1998@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+max-line-length=100

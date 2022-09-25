@@ -1,0 +1,25 @@
+#nonterminals
+P
+K
+T
+V
+L
+J
+J'
+#terminals
+b
+e
+t
+v
+a
+c
+&
+#start
+P
+#productions
+P ::= K L | b K L e
+K ::= c K | T V
+T ::= t T | &
+V ::= v V | v
+L ::= J
+J ::= a | J c | e
