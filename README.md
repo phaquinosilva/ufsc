@@ -32,16 +32,16 @@ NOTA: Na tabela abaixo constam todas as disciplinas cursadas durante a graduaç�
 | INE5418 | Computação Distribuída |
 | INE5419 | [Engenharia de Software II](https://github.com/phaquinosilva/ufsc/tree/master/INE5419) |
 | INE5420 | Computação Gráfica |
-| INE5421 | Linguagens Formais e Compiladores |
+| INE5421 | [Linguagens Formais e Compiladores](https://github.com/phaquinosilva/ufsc/tree/master/INE5421) |
 | INE5422 | [Redes de Computadores II](https://github.com/phaquinosilva/ufsc/tree/master/INE5422) |
 | INE5423 | [Bancos de Dados I](https://github.com/phaquinosilva/ufsc/tree/master/INE5423) |
 | INE5424 | Sistemas Operacionais II |
 | INE5425 | Modelagem e Simulação |
-| INE5426 | Construção de Compiladores |
+| INE5426 | [Construção de Compiladores](https://github.com/phaquinosilva/ufsc/tree/master/INE5426) |
 | INE5427 | Planejamento e Gestão de Projetos |
 | INE5428 | Informática e Sociedade |
-| INE5429 | Segurança em Computação |
-| INE5430 | Inteligência Articial |
+| INE5429 | [Segurança em Computação](https://github.com/phaquinosilva/ufsc/tree/master/INE5429) |
+| INE5430 | [Inteligência Articial](https://github.com/phaquinosilva/ufsc/tree/master/INE5430) |
 | INE5431 | [Sistemas Multimídia](https://github.com/phaquinosilva/ufsc/tree/master/INE5431) |
 | INE5432 | Banco de Dados II |
 
