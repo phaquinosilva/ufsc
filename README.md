@@ -29,9 +29,9 @@ NOTA: Na tabela abaixo constam todas as disciplinas cursadas durante a graduaç�
 | INE5415 | [Teoria da Computação](https://github.com/phaquinosilva/ufsc/tree/master/INE5415) |
 | INE5416 | [Paradigmas de Programação](https://github.com/phaquinosilva/ufsc/tree/master/INE5416) |
 | INE5417 | [Engenharia de Software I](https://github.com/phaquinosilva/ufsc/tree/master/INE5417) |
-| INE5418 | Computação Distribuída |
+| INE5418 | [Computação Distribuída](https://github.com/phaquinosilva/ufsc/tree/main/INE5418) |
 | INE5419 | [Engenharia de Software II](https://github.com/phaquinosilva/ufsc/tree/master/INE5419) |
-| INE5420 | Computação Gráfica |
+| INE5420 | [Computação Gráfica](https://github.com/phaquinosilva/ufsc/tree/main/INE5420) |
 | INE5421 | [Linguagens Formais e Compiladores](https://github.com/phaquinosilva/ufsc/tree/master/INE5421) |
 | INE5422 | [Redes de Computadores II](https://github.com/phaquinosilva/ufsc/tree/master/INE5422) |
 | INE5423 | [Bancos de Dados I](https://github.com/phaquinosilva/ufsc/tree/master/INE5423) |
