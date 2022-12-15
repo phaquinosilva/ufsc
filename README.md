@@ -59,7 +59,9 @@ NOTA: Na tabela abaixo constam todas as disciplinas cursadas durante a graduaç�
 ### Outras atividades acadêmicas
 
 + 18-2 : [Monitoria da disciplina EEL5101](https://github.com/phaquinosilva/ufsc/tree/master/Monitoria%20EEL5101%20-%2018-2)
-+ [Iniciação científica no ECLab]()
++ [Iniciação científica no ECLab]
+  + [Caracterização elétrica de somadores aproximados](https://github.com/phaquinosilva/axc-fa)
+  + [Projeto de comparadores aproximados para realização em hardware de árvores de decisão](https://github.com/phaquinosilva/ACxML)
 
 ### Links Adicionais
 
