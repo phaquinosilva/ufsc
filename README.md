@@ -19,6 +19,7 @@ NOTA: Na tabela abaixo constam todas as disciplinas cursadas durante a graduaç�
 | INE5404 | [Programação Orientada a Objetos II](https://github.com/phaquinosilva/ufsc/tree/master/INE5404) |
 | INE5405 | Probabilidade e Estatística |
 | INE5406 | [Sistemas Digitais](https://github.com/phaquinosilva/ufsc/tree/master/INE5406) |
+| INE5407 | Ciência, Tecnologia e Sociedade
 | INE5408 | [Estruturas de Dados](https://github.com/phaquinosilva/ufsc/tree/master/INE5408) |
 | INE5409 | [Cálculo Numérico para Computação](https://github.com/phaquinosilva/ufsc/tree/master/INE5409) |
 | INE5410 | Programação Concorrente |
