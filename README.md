@@ -63,7 +63,7 @@ NOTA: Na tabela abaixo constam todas as disciplinas cursadas durante a graduaç�
   + [Caracterização elétrica de somadores aproximados](https://github.com/phaquinosilva/axc-fa)
   + [Projeto de comparadores aproximados para realização em hardware de árvores de decisão](https://github.com/phaquinosilva/ACxML)
 + [TCC](https://github.com/phaquinosilva/tcc)
-+ 
+
 ### Links Adicionais
 
 + [Currículo do Curso](http://cagr.sistemas.ufsc.br/relatorios/curriculoCurso?curso=208)
