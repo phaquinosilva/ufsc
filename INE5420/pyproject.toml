@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "sgi"
+version = "0.1.0"
+description = "Trabalho feito para a disciplina INE5420 - Computação Gráfica"
+authors = ["Pedro Aquino"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.23.3"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.971"
+black = "^22.8.0"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+sgi = "sgi.__main__:main"
+
+[tool.black]
+skip-string-normalization = true
+
+[tool.isort]
+profile = "black"
